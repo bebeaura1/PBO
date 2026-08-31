@@ -33,4 +33,19 @@ Jawaban pertanyaan
 5. Atribut brand, speed, dan gear tidak lagi ditulis di dalam class RoadBike karena menerapkan inheritance dari class Bike, jadi RoadBike otomatis sudah memiliki atribut-atribut tersebut
 
 ## 6. Tugas
+Foto Barang : <br>
+<img src="img/Hp.jpeg" width="20%">
+<img src="img/Kipas.jpeg" width="20%">
+<img src="img/Lampu.jpeg" width="20%">
+<img src="img/Laptop.jpeg" width="20%">
+
+<br>Input : <br>
+<img src="img/DemoTugas.png" width="50%">
+<img src="img/ElektronikTugas.png" width="50%">
+<img src="img/HpTugas.png" width="50%">
+<img src="img/KipasTugas.png" width="50%">
+<img src="img/LampuTugas.png" width="50%">
+<img src="img/LaptopTugas.png" width="50%">
+
+<br>Output : <br>
 ![Screenshot](img/Tugas.png)
