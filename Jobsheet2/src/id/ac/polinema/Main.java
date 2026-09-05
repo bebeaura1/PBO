@@ -10,5 +10,8 @@ public class Main {
         copy.width = 10;
         System.out.println("Via original: " + original.area());
         System.out.println("Via copy: " + copy.area());
+
+        Student s = new Student("Nadia", "S001", 3.8);
+        System.out.println(s.describe());
     }
 }
