@@ -10,8 +10,5 @@ public class Main {
         copy.width = 10;
         System.out.println("Via original: " + original.area());
         System.out.println("Via copy: " + copy.area());
-
-        Rectangle empty = null; // Empty dah otomatis null
-        System.out.println(empty.area());
     }
 }
