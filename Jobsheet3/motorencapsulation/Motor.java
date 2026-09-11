@@ -15,7 +15,11 @@ public class Motor {
 
     public void tambahKecepatan(){
         if (kontakOn == true) {
-            kecepatan += 5;
+            if (kecepatan < 100) {
+                kecepatan += 5;
+            } else {
+                System.out.println("Kecepatan sudah mencapai maksimal.");
+            }
         } else {
             System.out.println("Kecepatan tidak bisa bertambah karena Mesin Off! \n");
         }
