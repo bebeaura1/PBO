@@ -36,8 +36,6 @@ Misal kecepatan += 50; <br>
 Untuk hasil running program pada percobaan 2 yaitu seperti pada gambar di bawah ini<br>
 <img src="img/percobaan3.png" width="400px"><br>
 
-## 6. Tugas
-<br>Input : <br>
-
-
-<br>Output : <br>
+## 3.5 Percobaan 4 - Konstruktor, Instansiasi
+Untuk hasil running program pada percobaan 2 yaitu seperti pada gambar di bawah ini<br>
+<img src="img/percobaan4.png" width="400px"><br>
