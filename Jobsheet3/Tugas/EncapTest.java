@@ -8,5 +8,8 @@ public class EncapTest {
 
         System.out.println("Name : " + encap.getName());
         System.out.println("Age : " + encap.getAge());
+
+        encap.setAge(12);
+        System.out.println("Age: " + encap.getAge());
     }
 }
