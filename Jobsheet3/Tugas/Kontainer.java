@@ -32,7 +32,11 @@ public class Kontainer {
 
     public void turunkanMuatan(double muatan){
         if (beratMuatanSaatIni > 0) {
-            beratMuatanSaatIni = beratMuatanSaatIni - muatan;
+            if (muatan < beratMuatanSaatIni * 50/100) {
+                beratMuatanSaatIni = beratMuatanSaatIni - muatan;
+            } else {
+                System.out.println("Maaf, demi keselamatan, pembongkaran muatan satu kali jalan tidak boleh melebihi 50% dari muatan saat ini!");
+            }
         } else {
             System.out.println("Belum ada muatan.");
         }
