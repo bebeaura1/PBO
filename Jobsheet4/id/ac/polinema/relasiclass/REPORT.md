@@ -22,7 +22,7 @@ Untuk hasil running program pada percobaan 1 pada beberapa langkah yaitu seperti
 3. Atribut yang bertipe objek adalah proc. Baris kode yang menunjukkan relasi tersebut adalah baris deklarasi atribut (5) didalam Laptop.java --> private Processor proc;<br>
 4. Sintaks proc.info() berfungsi untuk melakukan delegasi. Kelas Laptop tidak mencetak detail atau informasi tentang processor secara mandiri, tapi menyuruh objek proc dari kelas Processor untuk menjalankan method info() miliknya sendiri.<br>
 5. Tidak, keduanya menghasilkan output yang sama persis. Hal ini karena penentuan jenis relasi tidak bergantung pada dimana objek dibuat. Yang menentukan adalah kelas mana yang memanggil instansiasi new Processor(..). Pada kedua langkah tersebut objek Processor dibuat didalam kelas MainPercobaan1 bukan dibuat didalam kode kelas Laptop itu sendiri.<br>
-6. Secara kode, relasi tersebut termasuk Aggregation. Bukti baris kodenya dapat dilihat pada konstruktor berparameter dikelas Laptop yang menerima objek Processor di luar sebagai parameter serta pada method setternya. 
+6. Secara kode, relasi tersebut termasuk Aggregation. Bukti baris kodenya dapat dilihat pada konstruktor berparameter dikelas Laptop yang menerima objek Processor di luar sebagai parameter serta pada method setternya.<br> 
 <img src="img/perc1bukti1.png" width="200px"><br>
 serta pada method setter<br>
 <img src="img/perc1bukti2.png" width="200px"><br>
@@ -66,4 +66,16 @@ Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti
 ## - Percobaan 4: Array of Object dan Multiplicity (Gerbong, Kursi, dan Penumpang)
 Untuk hasil running program pada percobaan 4 yaitu seperti dibawah ini.<br>
 - Langkah 6 :<br>
-<img src="img/perc4langkah6.png" width="200px">
+<img src="img/perc4langkah6.png" width="200px"><br>
+
+**Jawaban Pertanyaan Percobaan 4**
+1. Jumlah kursi dalam Gerbong A adalah 10 kursi.<br>
+2. Kode itu berfungsi sebagai pengecek untuk memastikan bahwa informasi penumpang hanya akan dicetak apabila kursi tersebut sudah terisi. Jika kursi kosong, program tidak akan mencetak detail penumpang, sehingga terhindar dari error NullPointerException<br>
+3. Nilai nomor dikurangi 1 karena indeks array di Java dimulai dari angka 0, sedangkan nomor kursi yang diinputkan oleh pengguna biasanya dimulai dari angka 1.<br>
+4. Objek penumpang lama (Mr. Krab) pada kursi nomor 1 akan ditimpa dan digantikan oleh objek budi. Java tidak memberikan peringatan ataupun error secara otomatis karena perintah tersebut secara sah melakukan penugasan ulang nilai pada elemen array arrayKursi[0].<br>
+5. Modifikasi program sehingga tidak diperkenankan menduduki kursi yang sudah ada penumpang lain<br><img src="img/perc4modifno5.png" width="700px"><br>
+6. Kita memilih atribut bernama satu-satu jika jumlah objek komponennya sudah pasti, tetap, dan masing-masing memiliki peran atau identitas spesifik yang berbeda. Kita memilih array jika jumlah objek komponennya banyak, dinamis, atau tidak tetap, serta tidak memerlukan nama atribut yang unik satu per satu karena semuanya merepresentasikan entitas yang sejenis<br>
+7. Gerbong-Kursi adalah Composition: Objek Kursi diciptakan sendiri di dalam kelas Gerbong melalui pemanggilan new Kursi(...) di dalam method initKursi() yang dipanggil oleh konstruktor Gerbong.<br>
+<img src="img/perc4pertanyaanno7.png" width="500px"><br>
+Kursi-Penumpang adalah Aggregation: Objek Penumpang tidak pernah dibuat di dalam kelas Kursi. Objek tersebut diciptakan di luar (pada MainPercobaan4) lalu dikirimkan (inject) ke dalam objek Kursi melalui method setPenumpang().<br> <img src="img/perc4pertanyaanno7lagi.png" width="500px">
+<br><br>
