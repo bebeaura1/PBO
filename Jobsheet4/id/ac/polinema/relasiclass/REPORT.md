@@ -36,3 +36,13 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
 <img src="img/perc2langkah6.png" width="200px"><br>
 - Langkah 7 :<br>
 <img src="img/perc2langkah7.png" width="200px"><br>
+
+**Jawaban Pertanyaan Percobaan 2**
+1. Baris kode yang menunjukkan relasi tersebut adalah bagian deklarasi atribut di dalam kelas Pelanggan.java <br>
+<img src="img/perc2bukti1.png" width="200px"><br><br>
+2. Karena kelas Mobil dan Sopir tidak memiliki atribut hari, sehingga mereka tidak mengetahui berapa lama durasi penyewaan tersebut. Nilai hari harus dikirimkan dari luar agar kelas Mobil dan Sopir dapat menghitung total biaya berdasarkan durasi harinya.<br>
+3. Perintah tersebut digunakan untuk melakukan delegasi, di mana kelas Pelanggan tidak menghitung biayanya sendiri, melainkan "menyuruh" objek mobil dan objek sopir untuk menghitung biaya masing-masing berdasarkan jumlah hari sewa.<br>
+4. Sintaks tersebut digunakan untuk melakukan setter injection, yaitu memasukkan atau menghubungkan objek m dan s yang sudah dibuat di luar ke dalam atribut relasi yang ada di dalam objek Pelanggan p<br>
+5. Proses ini digunakan untuk menjumlahkan hasil perhitungan biaya sewa mobil dan biaya sopir selama jangka waktu tertentu, lalu mengembalikan nilai total biaya keseluruhan yang harus dibayar oleh pelanggan.<br>
+6. Urutan eksekusinya adalah method p.getMobil() dieksekusi terlebih dahulu, yang mengembalikan sebuah objek Mobil yang sedang dipegang oleh pelanggan p, kemudian setelah objek Mobil tersebut didapatkan, method .getMerk() dipanggil langsung pada objek Mobil tersebut untuk mengambil dan mengembalikan nilai atribut merek mobil yaitu berupa Sting "Avanza"<br>
+7. Error yang akan muncul adalah NullPointerException. Karena p.setMobil tidak pernah dipanggil, variabel atribut mobil di dalam objek Pelanggan belum pernah diisi dengan objek Mobil yang sah (nilainya masih default yaitu null). Ketika program mencoba menjalankan mobil.hitungBiayaMobil(hari), itu sama saja seperti mencoba mengakses method pada kekosongan alias null, sehingga Java menghentikan program dan memunculkan NullPointerException.<br><br>
