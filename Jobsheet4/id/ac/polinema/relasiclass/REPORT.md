@@ -46,3 +46,9 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
 5. Proses ini digunakan untuk menjumlahkan hasil perhitungan biaya sewa mobil dan biaya sopir selama jangka waktu tertentu, lalu mengembalikan nilai total biaya keseluruhan yang harus dibayar oleh pelanggan.<br>
 6. Urutan eksekusinya adalah method p.getMobil() dieksekusi terlebih dahulu, yang mengembalikan sebuah objek Mobil yang sedang dipegang oleh pelanggan p, kemudian setelah objek Mobil tersebut didapatkan, method .getMerk() dipanggil langsung pada objek Mobil tersebut untuk mengambil dan mengembalikan nilai atribut merek mobil yaitu berupa Sting "Avanza"<br>
 7. Error yang akan muncul adalah NullPointerException. Karena p.setMobil tidak pernah dipanggil, variabel atribut mobil di dalam objek Pelanggan belum pernah diisi dengan objek Mobil yang sah (nilainya masih default yaitu null). Ketika program mencoba menjalankan mobil.hitungBiayaMobil(hari), itu sama saja seperti mencoba mengakses method pada kekosongan alias null, sehingga Java menghentikan program dan memunculkan NullPointerException.<br><br>
+
+
+## - Percobaan 3: Aggregation dengan Dua Role ke Kelas yang Sama (Kereta Api)
+Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 6 :<br>
+<img src="img/perc3langkah6.png" width="200px"><br>
