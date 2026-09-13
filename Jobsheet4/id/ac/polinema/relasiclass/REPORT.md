@@ -28,3 +28,9 @@ serta pada method setter<br>
 <img src="img/perc1bukti2.png" width="200px"><br>
 Objek Processor diciptakan di luar kelas Laptop (oleh MainPercobaan1) lalu di-inject ke dalam Laptop.<br>
 7. Tidak, relasi tersebut berubah menjadi Composition. Alasannya adalah karena objek Processor diciptakan secara mandiri didalam konstruktor kelas Laptop itu sendri menggunakan new Processor ("Generic", 1), bukan diterima sebagai parameter dari luar.Hal ini itu menunjukkan ikatan siklus hidup yang kuat, dimana kalau objek Laptop dihapus, maka objek Processor didalamnya juga akan ikut hilang.<br><br>
+
+
+## - Percobaan 2: Aggregation dengan Relasi Ganda (Rental Mobil)
+Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 6 :<br>
+<img src="img/perc2langkah6.png" width="200px"><br>
