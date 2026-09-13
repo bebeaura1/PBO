@@ -13,5 +13,8 @@ public class MainPercobaan1 {
         l1.setMerk("Thinkpad");
         l1.setProc(p1);
         l1.info();
+
+        Laptop l2 = new Laptop("Thinkpad", new Processor("Intel i5", 3));
+        l2.info();
     }
 }

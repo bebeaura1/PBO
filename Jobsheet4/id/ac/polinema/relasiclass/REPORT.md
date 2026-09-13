@@ -13,3 +13,5 @@ Untuk hasil running program pada percobaan 1 pada beberapa langkah yaitu seperti
 <img src="img/perc1langkah8.png" width="200px"><br>
 - Langkah 9 :<br>
 <img src="img/perc1langkah9.png" width="200px"><br>
+- Langkah 10 :<br>
+<img src="img/perc1langkah10.png" width="200px"><br>
