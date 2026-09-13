@@ -34,3 +34,5 @@ Objek Processor diciptakan di luar kelas Laptop (oleh MainPercobaan1) lalu di-in
 Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti dibawah ini.<br>
 - Langkah 6 :<br>
 <img src="img/perc2langkah6.png" width="200px"><br>
+- Langkah 7 :<br>
+<img src="img/perc2langkah7.png" width="200px"><br>
