@@ -79,3 +79,9 @@ Untuk hasil running program pada percobaan 4 yaitu seperti dibawah ini.<br>
 <img src="img/perc4pertanyaanno7.png" width="500px"><br>
 Kursi-Penumpang adalah Aggregation: Objek Penumpang tidak pernah dibuat di dalam kelas Kursi. Objek tersebut diciptakan di luar (pada MainPercobaan4) lalu dikirimkan (inject) ke dalam objek Kursi melalui method setPenumpang().<br> <img src="img/perc4pertanyaanno7lagi.png" width="500px">
 <br><br>
+
+
+## - Percobaan 5: Composition (Mobil dan Mesin)
+Untuk hasil running program pada percobaan 5 yaitu seperti dibawah ini.<br>
+- Langkah 5 :<br>
+<img src="img/perc5langkah5.png" width="200px"><br>
