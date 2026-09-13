@@ -52,3 +52,5 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
 Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti dibawah ini.<br>
 - Langkah 6 :<br>
 <img src="img/perc3langkah6.png" width="200px"><br>
+- Langkah 9 :<br>
+<img src="img/perc3langkah9.png" width="200px"><br>
