@@ -85,3 +85,10 @@ Kursi-Penumpang adalah Aggregation: Objek Penumpang tidak pernah dibuat di dalam
 Untuk hasil running program pada percobaan 5 yaitu seperti dibawah ini.<br>
 - Langkah 5 :<br>
 <img src="img/perc5langkah5.png" width="200px"><br>
+
+**Jawaban Pertanyaan Percobaan 5**
+1. Baris kode yang menunjukkan hal tersebut adalah pada konstruktor kelas Mobil di mana objek Mesin diinisialisasi secara langsung --> this.mesin = new Mesin();<br>
+2. Secara desain, penambahan method setter tersebut akan membuka akses dari luar untuk mengganti atau menyisipkan objek Mesin baru. Relasi tersebut tidak akan lagi murni menjadi Composition, tapi bergeser atau melunak menjadi Aggregation, karena objek Mesin kini bisa dikirimkan dan dibuat di luar kelas Mobil<br>
+3. Perbedaannya terletak pada parameter konstruktor dan cara pembuatannya. Pada Percobaan 1 (Laptop), konstruktor menerima objek Processor sebagai marameter yang dibuat diluar. Pada percobaan 5, konstruktor tidak menerima parameter Mesin, tapi langsung memanggil new Mesin() didalam kelasnya sendiri.<br>
+4. Jika objek mobil di-set menjadi null, objek Mesin di dalamnya akan ikut hilang dari memori karena tidak ada referensi lain yang memegangnya. Beda dengan percobaan 1, jika objek Laptop dihapus, objek Processor masih bisa diselamatkan dan tetap hidup karena referensinya juga disimpan didalam variabel terpisah diluar. Mesin tidak bisa diselamatkan karena diciptakan secara eksklusif didalam Mobil tanpa pernah disimpan ke variabel luar.<br>
+5. Relasi tersebut akan berubah menjadi Aggregation. Alasannya karena objek Mesin tidak lagi diciptakan secara eksklusif didalam kelas mobil, tapi dibuat diluar kelas lalu dikirim melalui parameter konstruktor.<br><br>
