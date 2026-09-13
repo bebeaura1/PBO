@@ -92,3 +92,9 @@ Untuk hasil running program pada percobaan 5 yaitu seperti dibawah ini.<br>
 3. Perbedaannya terletak pada parameter konstruktor dan cara pembuatannya. Pada Percobaan 1 (Laptop), konstruktor menerima objek Processor sebagai marameter yang dibuat diluar. Pada percobaan 5, konstruktor tidak menerima parameter Mesin, tapi langsung memanggil new Mesin() didalam kelasnya sendiri.<br>
 4. Jika objek mobil di-set menjadi null, objek Mesin di dalamnya akan ikut hilang dari memori karena tidak ada referensi lain yang memegangnya. Beda dengan percobaan 1, jika objek Laptop dihapus, objek Processor masih bisa diselamatkan dan tetap hidup karena referensinya juga disimpan didalam variabel terpisah diluar. Mesin tidak bisa diselamatkan karena diciptakan secara eksklusif didalam Mobil tanpa pernah disimpan ke variabel luar.<br>
 5. Relasi tersebut akan berubah menjadi Aggregation. Alasannya karena objek Mesin tidak lagi diciptakan secara eksklusif didalam kelas mobil, tapi dibuat diluar kelas lalu dikirim melalui parameter konstruktor.<br><br>
+
+
+## - Percobaan 6: Dependency / Uses-A (Laptop Mencetak Dokumen ke Printer)
+Untuk hasil running program pada percobaan 6 yaitu seperti dibawah ini.<br>
+- Langkah 4 :<br>
+<img src="img/perc6langkah4.png" width="500px"><br>
