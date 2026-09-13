@@ -60,4 +60,10 @@ Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti
 2. Hasil outputnya adalah program berhenti di tengah jalan dan memunculkan error NullPointerException. Hal ini terjadi karena objek KeretaApi dibuat menggunakan konstruktor 3 parameter tanpa menyertakan asisten sehingga atribut this.asisten bernilai null. Ketika method this.asisten.info() dipanggil, program mencoba mengakses method dari sebuah referensi objek yang kosong.<br>
 3. Isi variabel asisten di dalam objek Kereta Api tersebut adalah null, yang berarti variabel referensi tersebut belum diinisialisasi.<br>
 4. Objek masinis tidak perlu dicek dengan cara yang sama. Alasannya karena didalam kedua konstruktor kelas KeretaApi, parameter masinis selalu wajib diisi dan diberikan ke this.masinis. Selain itu, kelas Pegawai tidak memiliki konstruktor default, sehingga objek Pegawai untuk masinis pasti sudah terinisialisasi dengan sah sejak awal dan tidak mungkin bernilai null.<br>
-5. Kereta Api memiliki dua objek Pegawai yang berbeda. Pada kode di langkah 6, instansiasi new Pegawai(...) dipanggil dua kali secara terpisah untuk membuat dua objek yang berbeda, yang satu disimpan ke variabel masinis dan yang satu lagi ke variabel asisten sebelum dikirimkan ke dalam objek KeretaApi.
+5. Kereta Api memiliki dua objek Pegawai yang berbeda. Pada kode di langkah 6, instansiasi new Pegawai(...) dipanggil dua kali secara terpisah untuk membuat dua objek yang berbeda, yang satu disimpan ke variabel masinis dan yang satu lagi ke variabel asisten sebelum dikirimkan ke dalam objek KeretaApi.<br><br>
+
+
+## - Percobaan 4: Array of Object dan Multiplicity (Gerbong, Kursi, dan Penumpang)
+Untuk hasil running program pada percobaan 4 yaitu seperti dibawah ini.<br>
+- Langkah 6 :<br>
+<img src="img/perc4langkah6.png" width="200px">
