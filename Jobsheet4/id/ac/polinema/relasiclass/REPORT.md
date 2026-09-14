@@ -97,4 +97,32 @@ Untuk hasil running program pada percobaan 5 yaitu seperti dibawah ini.<br>
 ## - Percobaan 6: Dependency / Uses-A (Laptop Mencetak Dokumen ke Printer)
 Untuk hasil running program pada percobaan 6 yaitu seperti dibawah ini.<br>
 - Langkah 4 :<br>
-<img src="img/perc6langkah4.png" width="500px"><br>
+<img src="img/perc6langkah4.png" width="400px"><br>
+
+**Jawaban Pertanyaan Percobaan 6**
+1. Kelas Laptop pada Percobaan 6 tidak memiliki atribut bertipe Printer. Ini berbeda dengan Percobaan 1, dimana kelas Laptop secara permanen menyimpan objek Processor sebagai salah satu atributnya (private Processor proc).<br>
+2. Laptop tidak lagi menyimpan referensi ke objek printer tersebut. Hal ini karena Printer printer hanya dideklarasikan sebagai parameter pada method cetakDokumen(), sehingga bersifat lokal dan referensinya akan hilang begitu eksekusi method selesai.<br>
+3. Relasi tersebut disebut Dependency karena Laptop hanya memakai sesaat objek Printer saat method dijalankan, tanpa memiliki kepemilikan struktural atau menyimpannya sebagai atribut. Berbeda dengan Aggregation yang mana objek bagian wajib disimpan sebagai atribut didalam kelas keseluruhan agar bisa diakses kapan saja.<br>
+4. Iya, relasi tersebut berubah dari dependency menjadi aggregation. Alasannya karena objek Printer sekarang disimpan seccara permanen sebagai atribut struktural didalam kelas Laptop, dimana objek Printer tersebut dibuat diluar kelas Laptop lalu dikirimkan ke dalamnya melalui konstruktor atau setter, bukan lagi sekedar dikirm sementara lewat parameter method.<br>
+-Input : <br>
+<img src="img/perc6no4kode1.png" width="500px"><br>
+<img src="img/perc6no4kode2.png" width="500px"><br>
+-Output : <br>
+<img src="img/perc6no4hasil.png" width="400px"><br>
+5. Lengkapi tabel berikut dengan kata-katamu sendiri: untuk masing-masing dari Aggregation, Composition, dan Dependency, sebutkan (a) apakah objek part disimpan sebagai atribut atau tidak, dan (b) siapa yang memanggil new untuk membuat objek part tersebut.
+```
++===============================================================================+
+| Jenis Relasi  | (a) 0bjek disimpan     | (b) Siapa yang memanggil new untuk   |
+|               |     sebagai atribut?   |     membuat objek part?              |
+|===============================================================================|
+| - Aggregation | Iya, disimpan sebagai  | Dibuat diluar kelas whole lalu       |
+|               | atribut kelas whole    | dikirim lewat konstruktor            |
+|-------------------------------------------------------------------------------|
+| - Composition | Iya, disimpan sebagai  | Dibuat didalam kelas whole itu       |
+|               | atribut kelas whole    | sendiri secara internal              |
+|-------------------------------------------------------------------------------|
+| - Dependency  | Tidak, objek tidak di  | Dibuat diluar lalu hanya dikirimkan  |
+|               | simpan sebagai atribut | sementara melalui parameter method   |
+|               |                        | saat dibutuhkan                      |
++===============================================================================+
+```
