@@ -16,6 +16,10 @@ public class Laptop {
     public void cetakDokumen(String namaFile){
         System.out.println(merk + " mengirim dokumen ke printer...");
         // printer.cetak(namaFile);
-        printerDefault.cetak(namaFile);
+        if (printerDefault != null) {
+            printerDefault.cetak(namaFile);
+        } else {
+            System.out.println("Belum ada dokumen");
+        }
     }
 }
