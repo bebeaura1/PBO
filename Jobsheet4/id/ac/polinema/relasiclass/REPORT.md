@@ -126,3 +126,42 @@ Untuk hasil running program pada percobaan 6 yaitu seperti dibawah ini.<br>
 |               |                        | saat dibutuhkan                      |
 +===============================================================================+
 ```
+<br><br>
+
+# D. Tugas dan Deliverable
+### Tugas mandiri:
+1. Studi Kasus : Pemeriksaan Klinik<br>
+Diagram Kelas<br>
+<img src="img/tugas/diagram.png" width="500px"><br>
+
+- **Class Dokter**<br>
+    - Baris kode relasi <b>Compositers</b><br>
+        <i>this.d = new Diagnosa(d);</i><br>
+        - Alasan = Karena objek Diagnosa diciptakan secara internal dan eksklusif di dalam konstruktor kelas Dokter menggunakan kata kunci new. Hal ini membuat siklus hidup objek Diagnosa terikat mutlak pada kelas Dokter; jika objek Dokter dihancurkan dari memori, objek Diagnosa miliknya akan ikut musnah dan tidak bisa diakses terpisah.<br>
+    - Baris kode relasi <b>Dependency</b><br>
+    <i>public void periksa(Obat obat){<br>
+            // ...<br>
+            obat.getObat();<br>
+        }</i><br>
+        - Alasan = Karena objek Obat tidak disimpan sebagai atribut tetap atau permanen di dalam kelas Dokter. Kelas Dokter hanya "meminjam" atau menggunakan objek Obat secara sementara melalui parameter method periksa(Obat obat) saat proses pemeriksaan berlangsung.<br>
+<img src="img/tugas/dokter.png" width="500px"><br>
+
+- **Class KlinikMain**<br>
+    - Baris kode relasi <b>Compositers</b><br>
+    <i>Pasien pasien = new Pasien("Jarjit", "25410854269");<br>
+        Dokter dokter = new Dokter("Dalang", "Nyeri otot", pasien);</i>  -->  Relasi <b>Aggregation</b><br>
+        - Alasan = Karena objek Pasien dibuat terlebih dahulu di luar kelas Dokter (yakni di dalam main class), kemudian dikirimkan (inject) ke dalam konstruktor kelas Dokter. Hubungannya bersifat longgar, artinya jika objek Dokter dihapus, objek Pasien di luar tetap dapat hidup dan berdiri sendiri tanpa ikut hancur.<br>
+<img src="img/tugas/klinikmain.png" width="500px"><br>
+
+- **Class Diagnosa**<br>
+<img src="img/tugas/diagnosa.png" width="500px"><br>
+
+- **Class Pasien**<br>
+<img src="img/tugas/pasien.png" width="500px"><br>
+
+- **Class Obat**<br>
+<img src="img/tugas/obat.png" width="500px"><br><br>
+
+2. Dalam merancang sistem barumu sendiri, bagaimana kita memutuskan sebuah relasi antar class seharusnya Aggregation, Composition, atau Dependency? Sebutkan pertanyaan kunci yang kita ajukan ke diri sendiri saat memutuskan.<br>
+**Jawaban :**<br>
+Penentuan jenis relasi dilakukan dengan menganalisis tingkat kepemilikan dan siklus hidup objek. Pertanyaan kunci pertama untuk Composition adalah apakah objek bagian mutlak diciptakan secara internal dan mati bersama kelas utama. Untuk Aggregation, pertanyaannya adalah apakah objek bagian dibuat di luar dan tetap dapat berdiri sendiri jika kelas utamanya dihapus. Sedangkan untuk Dependency, pertanyaan kunci nya adalah apakah objek tersebut hanya digunakan sementara melalui parameter method tanpa disimpan sebagai atribut permanen.
