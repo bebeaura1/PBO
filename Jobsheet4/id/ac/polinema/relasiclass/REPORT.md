@@ -134,6 +134,7 @@ Untuk hasil running program pada percobaan 6 yaitu seperti dibawah ini.<br>
 Diagram Kelas<br>
 <img src="img/tugas/diagram.png" width="500px"><br>
 
+**Input :**
 - **Class Dokter**<br>
     - Baris kode relasi <b>Compositers</b><br>
         <i>this.d = new Diagnosa(d);</i><br>
@@ -161,6 +162,9 @@ Diagram Kelas<br>
 
 - **Class Obat**<br>
 <img src="img/tugas/obat.png" width="500px"><br><br>
+
+**Output**<br>
+<img src="img/tugas/hasil.png" width="300px"><br><br>
 
 2. Dalam merancang sistem barumu sendiri, bagaimana kita memutuskan sebuah relasi antar class seharusnya Aggregation, Composition, atau Dependency? Sebutkan pertanyaan kunci yang kita ajukan ke diri sendiri saat memutuskan.<br>
 **Jawaban :**<br>
