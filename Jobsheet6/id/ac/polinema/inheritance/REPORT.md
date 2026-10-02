@@ -38,3 +38,19 @@ Error tidak muncul di MainPercobaan2 karena main memanggil method setX() dan set
 3. Karena method setX() dideklarasikan sebagai public di dalam ClassA dan diwariskan ke ClassB. Nilai x tersebut disimpan di dalam memori objek ClassB bagian dari ClassA.<br>
 4. Perbaikan B lebih disarankan untuk program nyata karena menerapkan prinsip encapsulation yaitu menyembunyikan data internal class dan mengontrol aksesnya lewat method getter/setter<br>
 5. Atribut protected tetap bisa diakses oleh subclass di package berbeda. Namun, jika atribut berstatus default tanpa modifier, subclass di beda package tidak dapat mengaksesnya.<br>
+
+## - Percobaan 3: Kata Kunci this dan super (Bangun dan Tabung) 
+Untuk hasil running program percobaan 3 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 4 :<br>
+<img src="img/perc3langkah4.png" width="200px"><br>
+- Langkah 5 :<br>
+<img src="img/perc3langkah5.png" width="200px"><br>
+- Langkah 6 :<br>
+<img src="img/perc3langkah6.png" width="200px"><br>
+
+**Jawaban Pertanyaan Percobaan 3** <br>
+1. Fungsi super pada super.phi = phi; dan super.r = r; adalah digunakan untuk merujuk atau mengakses atribut/method milik superclass, guna membedakannya jika terjadi kesamaan nama variabel.<br>
+2. Fungsi super dan this pada ekspresi super.phi * super.r * super.r * this.t di method volume() adalah kata super pada super.phi dan super.r digunakan untuk mengambil nilai phi dan r dari class Bangun, sedangkan kata this pada this.t digunakan untuk mengambil nilai t milik class Tabung sendiri<br>
+3. Tabung tetap dapat mengakses phi dan r karena diwariskan dari Bangun dan modifiernya protected. Jika diubah menjadi private, maka Tabung kehilangan akses langsung ke atribut tersebut.<br>
+4. Tidak berubah karena jika atribut tidak mengalami shadowing, this.phi akan mencari ke class sendiri, lalu otomatis mencarinya ke superclass jika tidak ditemukan di class sendiri.<br>
+5. r / this.r merujuk pada atribut r milik Tabung, sedangkan super.r merujuk pada atribut r milik Bangun. Awalan super. menjadi wajib itu ketika terjadi shadowing (subclass memiliki variabel dengan nama persis sama dengan superclass).<br>
