@@ -12,6 +12,6 @@ public class ClassB extends ClassA {
     }
 
     public void getJumlah(){
-        System.out.println("jumlah: " + (x + y + z));
+        System.out.println("jumlah: " + (getX() + getY() + z));
     }
 }
