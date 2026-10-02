@@ -54,3 +54,25 @@ Untuk hasil running program percobaan 3 pada beberapa langkah yaitu seperti diba
 3. Tabung tetap dapat mengakses phi dan r karena diwariskan dari Bangun dan modifiernya protected. Jika diubah menjadi private, maka Tabung kehilangan akses langsung ke atribut tersebut.<br>
 4. Tidak berubah karena jika atribut tidak mengalami shadowing, this.phi akan mencari ke class sendiri, lalu otomatis mencarinya ke superclass jika tidak ditemukan di class sendiri.<br>
 5. r / this.r merujuk pada atribut r milik Tabung, sedangkan super.r merujuk pada atribut r milik Bangun. Awalan super. menjadi wajib itu ketika terjadi shadowing (subclass memiliki variabel dengan nama persis sama dengan superclass).<br>
+
+## - Percobaan 4: Konstruktor dan Multilevel Inheritance (ClassA, ClassB, ClassC)
+Untuk hasil running program percobaan 4 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 3 :<br>
+<img src="img/perc4langkah3.png" width="200px"><br>
+- Langkah 4 :<br>
+<img src="img/perc4langkah4.png" width="200px"><br>
+- Langkah 5 :<br>
+<img src="img/perc4langkah5.png" width="200px"><br>
+
+**Jawaban Pertanyaan Percobaan 4** <br>
+1. ClassA adalah superclass dari ClassB. ClassB adalah subclass dari ClassA sekaligus superclass bagi ClassC. ClassC adalah subclass dari ClassB. ClassB disebut berperan ganda itu karna dia berperan sebagai superclass sekaligus subclass<br>
+2. Hal tersebut terjadi karena saat instisiasi objek subclass (ClassC), Java secara otomatis menjalankan konstruktor dari rantai induknya terlebih dahulu yaitu ClassB. Kemudian saat menjalankan ClassB, java menjalankan induknya dulu yaitu ClassA. Jadi urutannya adalah ClassA -> ClassB -> ClassC<br>
+3. Karena secara default Java otomatis menyisipkan super() di baris pertama konstruktor jika tidak ditulis secara eksplisit.<br>
+4. Melanggar aturan bahwa pemanggilan super(...) harus menjadi baris pertama di dalam konstruktor. Java menetapkan aturan ini agar inisialisasi bagian superclass diselesaikan terlebih dahulu sebelum bagian subclass dieksekusi.<br>
+5. Urutan proses yang terjadi ketika new ClassC() dieksekusi :<br>
+    1. Saat perintah new ClassC() dipanggil, program masuk ke konstruktor ClassC
+    2. Sebelum menjalankan kodenya sendiri, konstruktor ClassC secara otomatis memanggil konstruktor dari class induknya (ClassB) menggunakan super()
+    3. Begitu juga dengan konstruktor ClassB, sebelum mencetak isinya, konstruktor ini akan memanggil konstruktor class induk di atasnya lagi (ClassA) terlebih dahulu
+    4. Proses eksekusi paling awal yang benar-benar mencetak output adalah konstruktor ClassA, sehingga baris "konstruktor A dijalankan" tercetak paling pertama
+    5. Setelah konstruktor ClassA selesai, eksekusi turun kembali ke konstruktor ClassB dan mencetak "konstruktor B dijalankan"
+    6. Terakhir, setelah konstruktor ClassB selesai, program kembali ke konstruktor ClassC dan mencetak "konstruktor C dijalankan"
