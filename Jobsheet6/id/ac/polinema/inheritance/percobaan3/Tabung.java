@@ -2,9 +2,10 @@ package Jobsheet6.id.ac.polinema.inheritance.percobaan3;
 
 public class Tabung extends Bangun {
     protected int t;
+    protected int r = 5;
 
     public void setSuperPhi(double phi){
-        this.phi = phi;
+        super.phi = phi;
     }
 
     public void setSuperR(int r){
@@ -17,7 +18,13 @@ public class Tabung extends Bangun {
 
     public void volume(){
         System.out.println("Volume Tabung adalah: "
-                + (this.phi * super.r * super.r * this.t)
+                + (super.phi * super.r * super.r * this.t)
         );
+    }
+
+    public void cekR(){
+        System.out.println("r       = " + r);
+        System.out.println("this.r  = " + this.r);
+        System.out.println("super.r = " + super.r);
     }
 }
