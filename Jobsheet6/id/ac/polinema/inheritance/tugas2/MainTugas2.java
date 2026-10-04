@@ -11,5 +11,9 @@ public class MainTugas2 {
         tv.mainkanDVD();
         tv.masukkanDVD("The Matrix");
         tv.mainkanDVD();
+
+        // Uji tambahan
+        tv.pindahChannel(150);
+        System.out.println("Channel aktif sekarang: " + tv.getChannelAktif());
     }
 }

@@ -139,3 +139,7 @@ b) Versi method yang dijalankan adalah method getGaji() milik kelas Dosen karena
 **Output**<br>
 - **Output awal**<br>
 <img src="img/tugas2/hasil1.png" width="300px"><br><br>
+- **Uji tambahan**<br>
+<img src="img/tugas2/hasilkode2.png" width="600px"><br>
+**Penjelasan :**<br> 
+Jika tv.pindahChannel(150) dipanggil, nilai channelAktif akan tetap menjadi 20 karena angka 150 berada di luar rentang jumlahChannel (1-100) sehingga gagal melewati validasi if di dalam method pindahChannel. Selain itu, channelAktif tidak dapat diubah langsung dari MainTugas2 karena variabel tersebut bersifat private, sehingga akses perubahannya harus melalui method khusus yang sudah disediakan oleh kelas induknya.
