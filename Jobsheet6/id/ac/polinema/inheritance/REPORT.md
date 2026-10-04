@@ -119,11 +119,11 @@ Untuk hasil running program percobaan 5 pada beberapa langkah yaitu seperti diba
 <img src="img/tugas1/Main.png" width="500px"><br>
 
 **Output**<br>
-<img src="img/tugas1/hasil.png" width="200px"><br><br>
+<img src="img/tugas1/hasil.png" width="200px"><br>
 
 **Jawaban Pertayaan :**<br>
 a) Hal tersebut diperbolehkan karena terdapat hubungan pewarisan dimana kelas Dosen bertindak sebagai subclass dari kelas Pegawai. Dalam konsep PBO, referensi dari tipe superclass dapat digunakan untuk menampung objek dari subclass-nya<br>
-b) Versi method yang dijalankan adalah method getGaji() milik kelas Dosen karena Java mengeksekusi versi method yang sesuai dengan bentuk objek aslinya (Dosen) yang telah melakukan overriding<br>
+b) Versi method yang dijalankan adalah method getGaji() milik kelas Dosen karena Java mengeksekusi versi method yang sesuai dengan bentuk objek aslinya (Dosen) yang telah melakukan overriding<br><br>
 
 ### Tugas 2: Televisi dan TelevisiModern 
 **Input :**
@@ -142,4 +142,25 @@ b) Versi method yang dijalankan adalah method getGaji() milik kelas Dosen karena
 - **Uji tambahan**<br>
 <img src="img/tugas2/hasilkode2.png" width="600px"><br>
 **Penjelasan :**<br> 
-Jika tv.pindahChannel(150) dipanggil, nilai channelAktif akan tetap menjadi 20 karena angka 150 berada di luar rentang jumlahChannel (1-100) sehingga gagal melewati validasi if di dalam method pindahChannel. Selain itu, channelAktif tidak dapat diubah langsung dari MainTugas2 karena variabel tersebut bersifat private, sehingga akses perubahannya harus melalui method khusus yang sudah disediakan oleh kelas induknya.
+Jika tv.pindahChannel(150) dipanggil, nilai channelAktif akan tetap menjadi 20 karena angka 150 berada di luar rentang jumlahChannel (1-100) sehingga gagal melewati validasi if di dalam method pindahChannel. Selain itu, channelAktif tidak dapat diubah langsung dari MainTugas2 karena variabel tersebut bersifat private, sehingga akses perubahannya harus melalui method khusus yang sudah disediakan oleh kelas induknya.<br><br>
+
+### Tugas 3: Karakter Game
+**Input :**
+- **Class Angel**<br>
+<img src="img/tugas3/Angel.png" width="400px"><br>
+
+- **Class Human**<br>
+<img src="img/tugas3/Human.png" width="500px"><br>
+
+- **Class Wizard**<br>
+<img src="img/tugas3/Wizard.png" width="500px"><br>
+
+- **Class Karakter**<br>
+<img src="img/tugas3/Karakter.png" width="500px"><br>
+
+- **Class MainTugas3**<br>
+<img src="img/tugas3/Main.png" width="500px"><br>
+
+**Output**<br>
+- **Output awal**<br>
+<img src="img/tugas3/hasil.png" width="400px"><br><br>
