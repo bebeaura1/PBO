@@ -124,3 +124,18 @@ Untuk hasil running program percobaan 5 pada beberapa langkah yaitu seperti diba
 **Jawaban Pertayaan :**<br>
 a) Hal tersebut diperbolehkan karena terdapat hubungan pewarisan dimana kelas Dosen bertindak sebagai subclass dari kelas Pegawai. Dalam konsep PBO, referensi dari tipe superclass dapat digunakan untuk menampung objek dari subclass-nya<br>
 b) Versi method yang dijalankan adalah method getGaji() milik kelas Dosen karena Java mengeksekusi versi method yang sesuai dengan bentuk objek aslinya (Dosen) yang telah melakukan overriding<br>
+
+### Tugas 2: Televisi dan TelevisiModern 
+**Input :**
+- **Class Televisi**<br>
+<img src="img/tugas2/Televisi.png" width="400px"><br>
+
+- **Class TelevisiModern**<br>
+<img src="img/tugas2/TelevisiModern.png" width="500px"><br>
+
+- **Class MainTugas2**<br>
+<img src="img/tugas2/Main.png" width="500px"><br>
+
+**Output**<br>
+- **Output awal**<br>
+<img src="img/tugas2/hasil1.png" width="300px"><br><br>
