@@ -102,3 +102,25 @@ Untuk hasil running program percobaan 5 pada beberapa langkah yaitu seperti diba
     2. Konstruktor Desktop (menjalankan inisialisasi printer melalui super(...)).
     3. Konstruktor Workstation (menjalankan inisialisasi gpu miliknya sendiri).<br>
     <img src="img/perc5soalno5.png" width="700px"><br>
+
+# D. Tugas dan Deliverable
+### Tugas 1: Pegawai, Dosen, dan DaftarGaji
+**Input :**
+- **Class Dosen**<br>
+<img src="img/tugas1/Dosen.png" width="400px"><br>
+
+- **Class DaftarGaji**<br>
+<img src="img/tugas1/DaftarGaji.png" width="500px"><br>
+
+- **Class Pegawai**<br>
+<img src="img/tugas1/Pegawai.png" width="400px"><br>
+
+- **Class MainTugas1**<br>
+<img src="img/tugas1/Main.png" width="500px"><br>
+
+**Output**<br>
+<img src="img/tugas1/hasil.png" width="200px"><br><br>
+
+**Jawaban Pertayaan :**<br>
+a) Hal tersebut diperbolehkan karena terdapat hubungan pewarisan dimana kelas Dosen bertindak sebagai subclass dari kelas Pegawai. Dalam konsep PBO, referensi dari tipe superclass dapat digunakan untuk menampung objek dari subclass-nya<br>
+b) Versi method yang dijalankan adalah method getGaji() milik kelas Dosen karena Java mengeksekusi versi method yang sesuai dengan bentuk objek aslinya (Dosen) yang telah melakukan overriding<br>
