@@ -8,8 +8,11 @@
 # Inheritance (Pewarisan)
 
 ## - Percobaan 1: Single Inheritance dengan extends (ClassA dan ClassB)
-Untuk hasil running program pada percobaan 1 pada langkah 7 yaitu seperti dibawah ini.<br>
-<img src="img/perc1.png" width="200px"><br>
+Untuk hasil running program pada percobaan 1 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 5 :<br>
+<img src="img/perc1langkah5.png" width="300px"><br>
+- Langkah 7 :<br>
+<img src="img/perc1langkah7.png" width="200px"><br>
 
 **Jawaban Pertanyaan Percobaan 1** <br>
 1. Karena pada awalnya ClassB belum diturunkan dari ClassA (extends ClassA belum ditulis), sehingga atribut x dan y tidak dikenal di dalam ClassB<br>
@@ -24,6 +27,8 @@ Untuk hasil running program pada percobaan 1 pada langkah 7 yaitu seperti dibawa
 
 ## - Percobaan 2: Single Inheritance dengan extends (ClassA dan ClassB)
 Untuk hasil running program percobaan 2 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 5 :<br>
+<img src="img/perc2langkah5.png" width="500px"><br>
 - Langkah 6 :<br>
 <img src="img/perc2langkah6.png" width="200px"><br>
 - Langkah 7 :<br>
@@ -31,7 +36,7 @@ Untuk hasil running program percobaan 2 pada beberapa langkah yaitu seperti diba
 
 **Jawaban Pertanyaan Percobaan 2** <br>
 1. Error muncul di file ClassB.java pada baris method getJumlah() dengan pesan :<br>
-<img src="img/perc2soalno1.png" width="500px"><br>
+<img src="img/perc2langkah5.png" width="500px"><br>
 Error tidak muncul di MainPercobaan2 karena main memanggil method setX() dan setY() yang bersifat public.<br>
 
 2. Penyebab error: Atribut berhak akses private tidak diwariskan ke subclass, sehingga tidak bisa diakses secara langsung di dalam ClassB<br>
