@@ -75,4 +75,25 @@ Untuk hasil running program percobaan 4 pada beberapa langkah yaitu seperti diba
     3. Begitu juga dengan konstruktor ClassB, sebelum mencetak isinya, konstruktor ini akan memanggil konstruktor class induk di atasnya lagi (ClassA) terlebih dahulu
     4. Proses eksekusi paling awal yang benar-benar mencetak output adalah konstruktor ClassA, sehingga baris "konstruktor A dijalankan" tercetak paling pertama
     5. Setelah konstruktor ClassA selesai, eksekusi turun kembali ke konstruktor ClassB dan mencetak "konstruktor B dijalankan"
-    6. Terakhir, setelah konstruktor ClassB selesai, program kembali ke konstruktor ClassC dan mencetak "konstruktor C dijalankan"
+    6. Terakhir, setelah konstruktor ClassB selesai, program kembali ke konstruktor ClassC dan mencetak "konstruktor C dijalankan"<br>
+
+## - Percobaan 5: Konstruktor Berparameter dan Overriding (Komputer, Desktop, Laptop) 
+Untuk hasil running program percobaan 5 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 4 :<br>
+<img src="img/perc5langkah4.png" width="200px"><br>
+- Langkah 5 :<br>
+<img src="img/perc5langkah5.png" width="400px"><br>
+- Langkah 6 :<br>
+<img src="img/perc5langkah6_1.png" width="300px">
+<img src="img/perc5langkah6_2.png" width="350px"><br>
+
+**Jawaban Pertanyaan Percobaan 4** <br>
+1. Fungsi super(merk, memory, cpu) pada konstruktor Desktop adalah digunakan untuk memanggil konstruktor berparameter yang ada di superclass (Komputer) dan meneruskan nilai2 tersebut ke induknya agar atribut dasar di superclass terinisialisasi dengan benar. Atribut yang diisi oleh baris tersebut adalah merk, kapasitasMemory, dan kecepatanCPU, sedangkan atribut yang diisi oleh baris berikutnya adalah atribut tambahan khusus milik subclass Desktop sendiri, yaitu printer.<br>
+2. Pada Percobaan 4, super() yang tidak ditulis adalah konstruktor default yang otomatis disisipkan oleh compiler. Sedangkan pada Eksperimen 1, error terjadi karena pemanggilan konstruktor berparameter induk tidak sesuai aturan hierarki atau parameter yang dibutuhkan tidak lengkap<br>
+3. Istilah kondisi ini adalah method Overriding. Apabila baris super.showInfo(); pada Desktop dihapus maka informasi dasar dari superclass (seperti Merk, Kapasitas Memory, dan Kecepatan CPU) tidak akan tercetak di layar. Yang tampil di terminal hanya informasi tambahan milik subclass (Printer).<br>
+4. Ketika anotasi @Override dipasang pada method yang salah ketik (misalnya showinfo), compiler Java mendeteksi ketidaksesuaian dan memunculkan garis merah. Namun, jika anotasi @Override dihapus atau tidak digunakan, compiler menganggapnya sebagai method baru yang berdiri sendiri sehingga program tetap bisa di run, tapi fungsi overriding nya gagal bekerja sehingga informasi printer tidak ikut tercetak. Manfaat menuliskan @Override adalah berfungsi sebagai pengaman dari compiler untuk mendeteksi kesalahan penulisan nama method sejak dini.<br>
+5. Ketika objek new Workstation(...) dibuat, konstruktor yang terpanggil dan dieksekusi secara berurutan dimulai dari parent hingga ke child :<br>
+    1. Konstruktor Komputer (menjalankan inisialisasi merk, memory, dan cpu dari class paling atas).
+    2. Konstruktor Desktop (menjalankan inisialisasi printer melalui super(...)).
+    3. Konstruktor Workstation (menjalankan inisialisasi gpu miliknya sendiri).<br>
+    <img src="img/perc5soalno5.png" width="700px"><br>

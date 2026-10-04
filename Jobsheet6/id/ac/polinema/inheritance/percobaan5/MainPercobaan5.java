@@ -10,5 +10,8 @@ public class MainPercobaan5 {
         lap.showInfo();
         System.out.println();
         desk.nyalakanKomputer();
+
+        Workstation w = new Workstation("Vivo", 2080, 3000, "Canon", "NVIDIA RTX 4060");
+        w.showInfo();
     }
 }
