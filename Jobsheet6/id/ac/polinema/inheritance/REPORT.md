@@ -164,3 +164,8 @@ Jika tv.pindahChannel(150) dipanggil, nilai channelAktif akan tetap menjadi 20 k
 **Output**<br>
 - **Output awal**<br>
 <img src="img/tugas3/hasil.png" width="400px"><br><br>
+
+### Tugas 4: Jawab singkat 
+**Jawaban pertanyaan :**<br>
+1. Hubungan is-a itu menggambarkan kondisi dimana suatu kelas adalah bentuk spesifik dari kelas induknya, contohnya seperti pada percobaan 5 Desktop is-a Komputer dimana kelas anak mewarisi langsung sifat induknya. Sebaliknya, hubungan has-a menunjukkan kepemilikan objek didalam kelas lain, seperti pada tugas1, DaftarGaji has-a Pegawai[] yang berarti kelas DaftarGaji memiliki kumpulan data objek Pegawai di dalam sebuah array.
+2. Anggota kelas yang bersifat private tidak dapat diwariskan atau diakses secara langsung oleh kelas anak (subclass). Sebaliknya, anggota yang bersifat protected bisa diwariskan sehingga dapat diakses secara langsung oleh kelas turunannya. Sementara itu, konstruktor sebenarnya tidak ikut diwariskan, namun wajib dipanggil menggunakan super(...) pada baris pertama saat pembuatan objek subclass agar atribut dari kelas induk dapat terinisialisasi dengan benar.
