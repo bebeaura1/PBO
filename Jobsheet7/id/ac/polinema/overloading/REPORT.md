@@ -17,21 +17,28 @@ Untuk hasil running program pada percobaan 1 pada beberapa langkah yaitu seperti
     - Eror 2<br>
     <img src="img/percobaan1/perc1eror2.png" width="600px"><br>
     - Hasil<br>
-    <img src="img/percobaan1/perc1langkah5.png" width="600px"><br>
-```
-+----------------------------------------------------------------+
-| Tambahan pada class Perkalian       | Hasil                    |
-|-------------------------------------|--------------------------|
-| public long kali(int a, int b){     | Pesan error : Duplicate  |
-|       return (long) a * b;          | method kali(int, int)    |
-| }                                   | in type Perkalian        |
-|-------------------------------------|--------------------------|
-| public int kali(int x, int y){      | Pesan error : Duplicate  |
-|       return x * y;                 | method kali(int, int)    |
-| }                                   | in type Perkalian        |
-|-------------------------------------|--------------------------|
-| Pada MainPercobaan1:                | Output : 12.5, 6, 6.0    |
-| p.kali(5, 2.5), p.kali(2, 3),       |                          |
-|  p.kali(2.0, 3)                     |                          |
-+----------------------------------------------------------------+
-```
+    <img src="img/percobaan1/perc1langkah5.png" width="600px"><br><br>
+        ```
+        +----------------------------------------------------------------+
+        | Tambahan pada class Perkalian       | Hasil                    |
+        |-------------------------------------|--------------------------|
+        | public long kali(int a, int b){     | Pesan error : Duplicate  |
+        |       return (long) a * b;          | method kali(int, int)    |
+        | }                                   | in type Perkalian        |
+        |-------------------------------------|--------------------------|
+        | public int kali(int x, int y){      | Pesan error : Duplicate  |
+        |       return x * y;                 | method kali(int, int)    |
+        | }                                   | in type Perkalian        |
+        |-------------------------------------|--------------------------|
+        | Pada MainPercobaan1:                | Output : 12.5, 6, 6.0    |
+        | p.kali(5, 2.5), p.kali(2, 3),       |                          |
+        |  p.kali(2.0, 3)                     |                          |
+        +----------------------------------------------------------------+
+        ```
+
+**Jawaban Pertanyaan Percobaan 1** <br>
+1. - Method kali(...) di overload menjadi tiga versi dengan pembeda pada jumlah dan tipe parameter : kali(int, int), kali(int, int, int), dan kali(double, double).
+    - Method tampilkan(...) di overload menjadi dua versi dengan pembeda pada urutan tipe parameter : tampilkan(int, String) dan tampilkan(String, int).
+2. Versi yang dipanggil adalah kali(double, double). Alasannya karena argumen yang dikirimkan berupa angka desimal (double), sehingga compiler mencocokkan parameter yang tipe datanya sama persis<br>
+3. Karena compiler membedakan method berdasarkan jumlah, tipe, dan urutan parameter. Nama variabel parameter dan tipe kembalian tidak ikut dicatat oleh compiler saat melakukan resolusi pemanggilan method.<br>
+4. Karena terjadi proses pelebaran tipe data otomatis. Nilai 5 yang bertipe int diperlebar secara otomatis oleh compiler menjadi double agar cocok dengan method kali(double, double)
