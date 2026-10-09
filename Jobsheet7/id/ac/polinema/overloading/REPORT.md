@@ -86,4 +86,6 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
     - tampil(long) dan tampil(Integer) dikomentari  :  
     <img src="img/percobaan2/perc2langkah3-3.png" width="400px"><br>
     - tampil(long), tampil(Integer), dan tampil(Object) dikomentari :  
-    <img src="img/percobaan2/perc2langkah3-4.png" width="400px"><br><br>
+    <img src="img/percobaan2/perc2langkah3-4.png" width="400px"><br>
+- Langkah 4 :<br>
+<img src="img/percobaan2/perc2langkah4.png" width="300px"><br><br>
