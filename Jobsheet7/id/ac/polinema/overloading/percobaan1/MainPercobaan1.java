@@ -9,5 +9,9 @@ public class MainPercobaan1 {
 
         p.tampilkan(1, "Perkalian");
         p.tampilkan("Perkalian", 1);
+
+        System.out.println("\nkali(5, 2.5)     = " + p.kali(5, 2.5));
+        System.out.println("kali(2, 3)       = " + p.kali(2, 3));
+        System.out.println("kali(25.5, 4.0)  = " + p.kali(2.0, 3));
     }
 }

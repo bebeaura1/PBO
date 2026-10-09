@@ -20,4 +20,12 @@ public class Perkalian {
     public void tampilkan(String label, int nomor){
         System.out.println(label + " #" + nomor);
     }
+
+    // public long kali(int a, int b){
+    //     return (long) a * b;
+    // }
+
+    // public int kali(int x, int y){
+    //     return x * y;
+    // }
 }
