@@ -62,3 +62,28 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
         ```
     - Hasil<br>
     <img src="img/percobaan2/perc2langkah2.png" width="300px"><br>
+- Langkah 3 :<br>
+    ```
+        +----------------------------------------+
+        | Kondisi                          | Hasil     |
+        |----------------------------------|-----------|
+        | Semua overload aktif             | 5         |
+        |----------------------------------|-----------|
+        | tampil(long) dikomentari         | 5         |
+        |----------------------------------|-----------|
+        | tampil(long) dan tampil(Integer) | 7         |
+        | dikomentari                      | 
+        |----------------------------------|-----------|
+        | tampil(long), tampil(Integer),   | 3.5       |
+        | dan tampil(Object) dikomentari   |           |
+        +----------------------------------------+
+         ```
+- Hasil Langkah 3<br>
+    - Semua overload aktif :  
+    <img src="img/percobaan2/perc2langkah3-1.png" width="400px"><br>
+    - tampil(long) dikomentari :  
+    <img src="img/percobaan2/perc2langkah3-2.png" width="400px"><br>
+    - tampil(long) dan tampil(Integer) dikomentari  :  
+    <img src="img/percobaan2/perc2langkah3-3.png" width="400px"><br>
+    - tampil(long), tampil(Integer), dan tampil(Object) dikomentari :  
+    <img src="img/percobaan2/perc2langkah3-4.png" width="400px"><br><br>
