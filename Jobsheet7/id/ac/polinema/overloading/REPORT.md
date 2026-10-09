@@ -41,4 +41,24 @@ Untuk hasil running program pada percobaan 1 pada beberapa langkah yaitu seperti
     - Method tampilkan(...) di overload menjadi dua versi dengan pembeda pada urutan tipe parameter : tampilkan(int, String) dan tampilkan(String, int).
 2. Versi yang dipanggil adalah kali(double, double). Alasannya karena argumen yang dikirimkan berupa angka desimal (double), sehingga compiler mencocokkan parameter yang tipe datanya sama persis<br>
 3. Karena compiler membedakan method berdasarkan jumlah, tipe, dan urutan parameter. Nama variabel parameter dan tipe kembalian tidak ikut dicatat oleh compiler saat melakukan resolusi pemanggilan method.<br>
-4. Karena terjadi proses pelebaran tipe data otomatis. Nilai 5 yang bertipe int diperlebar secara otomatis oleh compiler menjadi double agar cocok dengan method kali(double, double)
+4. Karena terjadi proses pelebaran tipe data otomatis. Nilai 5 yang bertipe int diperlebar secara otomatis oleh compiler menjadi double agar cocok dengan method kali(double, double)<br>
+
+## - Percobaan 2:  Overloading Method (Perkalian)
+Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 2 :<br>
+    - Perkiraan
+        ```
+        +----------------------------------------+
+        | Pemanggilan                | Hasil     |
+        |----------------------------|-----------|
+        | tampil(5)                  | 5         |
+        | tampil(5L)                 | 5         |
+        | tampil(Integer.valueOf(7)) | 7         |
+        | tampil(3.5)                | 3.5       |
+        | tampil("Java")             | Java      |
+        | tampil()                   | 0         |
+        | tampil(1, 2, 3)            | 3         |
+        +----------------------------------------+
+        ```
+    - Hasil<br>
+    <img src="img/percobaan2/perc2langkah2.png" width="300px"><br>
