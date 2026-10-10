@@ -116,3 +116,38 @@ at Jobsheet7.id.ac.polinema.overloading.percobaan3.MainPercobaan3.main(MainPerco
 Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti dibawah ini.<br>
 - Langkah 3 :<br>
 <img src="img/percobaan4/perc4langkah3.png" width="300px"><br>
+- Langkah 4 :<br>
+    ```
+        +--------------------------------------------------------------------------+
+        | Perubahan               | Pesan error pertama                            |
+        |-------------------------|------------------------------------------------|
+        | Hapus public pada       | Exception in thread "main" java.lang.Error:    |
+        | swim() di Piranha       | Unresolved compilation problem:                |
+        |                         | Cannot reduce the visibility of the            |
+        |                         | inherited method from Ikan                     |
+        |-------------------------|------------------------------------------------|
+        | Tambahkan final pada    | Exception in thread "main" java.lang.          |
+        | swim() di Ikan (public  | IncompatibleClassChangeError: class Jobsheet7. |
+        | final void swim())      | id.ac.polinema.overloading.percobaan4.Piranha  |
+        |                         | overrides final method Jobsheet7.id.ac.polinema|
+        |                         | .overloading.percobaan4.Ikan.swim()V           |
+        |-------------------------|------------------------------------------------|
+        | Ubah swim() di Piranha  | The method swim(int) of type Piranha must      |
+        | menjadi swim(int jarak),| override or implement a supertype method       |
+        | @Override tetap ada     |                                                |
+        |-------------------------|------------------------------------------------|
+        | Tambahkan throws        | Exception Exception is not compatible with     |
+        | Exception pada swim()   | throws clause in Ikan.swim()                   |
+        | di Piranha              |                                                |
+        +--------------------------------------------------------------------------+
+         ```
+
+- Hasil Langkah 4 : <br>
+    - Hapus public pada swim() di Piranha :  
+    <img src="img/percobaan4/perc4langkah4-1.png" width="400px"><br>
+    - Tambahkan final pada swim() di Ikan (public final void swim()) :  
+    <img src="img/percobaan4/perc4langkah4-2.png" width="400px"><br>
+    - Ubah swim() di Piranha menjadi swim(int jarak), @Override tetap ada :  
+    <img src="img/percobaan4/perc4langkah4-3.png" width="400px"><br>
+    - Tambahkan throws Exception pada swim() di Piranha :  
+    <img src="img/percobaan4/perc4langkah4-4.png" width="400px"><br>
