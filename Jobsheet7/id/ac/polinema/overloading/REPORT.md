@@ -105,4 +105,9 @@ Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti
 <img src="img/percobaan3/perc3langkah4.png" width="300px"><br>
 Pesan error : Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
     The constructor Kucing() is undefined
-at Jobsheet7.id.ac.polinema.overloading.percobaan3.MainPercobaan3.main(MainPercobaan3.java:10)
+at Jobsheet7.id.ac.polinema.overloading.percobaan3.MainPercobaan3.main(MainPercobaan3.java:10)<br><br>
+
+**Jawaban Pertanyaan Percobaan 3** <br>
+1. Karena konstruktor 1 parameter memanggil this(nama, 1) di baris pertamanya, sehingga aliran program mengeksekusi konstruktor 2 parameter terlebih dahulu sampai selesai, baru kemudian kembali menyelesaikan sisa baris di konstruktor 1 parameter.<br>
+2. Menghindari duplikasi kode, sehingga pemeliharaan kode jauh lebih mudah jika ada perubahan logika inisialisasi di masa mendatang<br>
+3. Urutan cetak saat new Kucing() dipanggil adalah konstruktor 2 parameter selesai, lalu Konstruktor 1 parameter selesai, dan terakhir Konstruktor 0 parameter selesai.<br><br>
