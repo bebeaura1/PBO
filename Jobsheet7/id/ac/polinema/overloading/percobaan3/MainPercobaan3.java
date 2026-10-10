@@ -7,5 +7,6 @@ public class MainPercobaan3 {
         System.out.println();
         Kucing b = new Kucing("Garfield", 5);
         b.info();
+        // Kucing c = new Kucing();
     }
 }

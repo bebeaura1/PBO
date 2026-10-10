@@ -101,3 +101,8 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
 Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti dibawah ini.<br>
 - Langkah 3 :<br>
 <img src="img/percobaan3/perc3langkah3.png" width="300px"><br>
+- Langkah 4 :<br>
+<img src="img/percobaan3/perc3langkah4.png" width="300px"><br>
+Pesan error : Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+    The constructor Kucing() is undefined
+at Jobsheet7.id.ac.polinema.overloading.percobaan3.MainPercobaan3.main(MainPercobaan3.java:10)
