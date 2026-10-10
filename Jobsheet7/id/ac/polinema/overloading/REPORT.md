@@ -96,3 +96,8 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
 3. Java tidak mengizinkan kombinasi widening dilanjutkan boxing (dari int ke long lalu ke Long). Sebaliknya, Java mengizinkan boxing dilanjutkan widening dari int ke Integer lalu ke Object<br>
 4. Output dari Resolusi.tampil((short) 3) adalah 3 dan Resolusi.tampil('A') adalah angka int yang di widening dari int ke long<br>
 <img src="img/percobaan2/perc2soal4.png" width="300px"><br><br>
+
+## - Percobaan 3:  Overloading Konstruktor (Kucing)
+Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 3 :<br>
+<img src="img/percobaan3/perc3langkah3.png" width="300px"><br>
