@@ -111,3 +111,8 @@ at Jobsheet7.id.ac.polinema.overloading.percobaan3.MainPercobaan3.main(MainPerco
 1. Karena konstruktor 1 parameter memanggil this(nama, 1) di baris pertamanya, sehingga aliran program mengeksekusi konstruktor 2 parameter terlebih dahulu sampai selesai, baru kemudian kembali menyelesaikan sisa baris di konstruktor 1 parameter.<br>
 2. Menghindari duplikasi kode, sehingga pemeliharaan kode jauh lebih mudah jika ada perubahan logika inisialisasi di masa mendatang<br>
 3. Urutan cetak saat new Kucing() dipanggil adalah konstruktor 2 parameter selesai, lalu Konstruktor 1 parameter selesai, dan terakhir Konstruktor 0 parameter selesai.<br><br>
+
+## - Percobaan 4: Dasar Overriding (Ikan dan Piranha)
+Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 3 :<br>
+<img src="img/percobaan4/perc4langkah3.png" width="300px"><br>
