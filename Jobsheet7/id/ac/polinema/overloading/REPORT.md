@@ -64,7 +64,7 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
     <img src="img/percobaan2/perc2langkah2.png" width="300px"><br>
 - Langkah 3 :<br>
     ```
-        +----------------------------------------+
+        +----------------------------------------------+
         | Kondisi                          | Hasil     |
         |----------------------------------|-----------|
         | Semua overload aktif             | 5         |
@@ -72,11 +72,11 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
         | tampil(long) dikomentari         | 5         |
         |----------------------------------|-----------|
         | tampil(long) dan tampil(Integer) | 7         |
-        | dikomentari                      | 
+        | dikomentari                      |           |
         |----------------------------------|-----------|
         | tampil(long), tampil(Integer),   | 3.5       |
         | dan tampil(Object) dikomentari   |           |
-        +----------------------------------------+
+        +----------------------------------------------+
          ```
 - Hasil Langkah 3<br>
     - Semua overload aktif :  
@@ -89,3 +89,10 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
     <img src="img/percobaan2/perc2langkah3-4.png" width="400px"><br>
 - Langkah 4 :<br>
 <img src="img/percobaan2/perc2langkah4.png" width="300px"><br><br>
+
+**Jawaban Pertanyaan Percobaan 2** <br>
+1. tampil(5) memilih tampil(long) karena compiler mengeksekusi Fase 1 terlebih dahulu, yaitu pencocokan eksak dan widening (dari int ke long). Proses boxing (int ke Integer) baru akan dicek pada fase berikutnya jika Fase 1 tidak ada yang cocok<br>
+2. Ketika tampil(long) dikomentari, tampil(5) pindah memanggil tampil(Integer) melalui proses boxing. Ketika tampil(Integer) juga dikomentari, ia beralih ke tampil(Object) melalui boxing lalu widening ke Object. Jika ketiganya itu dikomentar, ia akan lari ke tampil(int...)<br>
+3. Java tidak mengizinkan kombinasi widening dilanjutkan boxing (dari int ke long lalu ke Long). Sebaliknya, Java mengizinkan boxing dilanjutkan widening dari int ke Integer lalu ke Object<br>
+4. Output dari Resolusi.tampil((short) 3) adalah 3 dan Resolusi.tampil('A') adalah angka int yang di widening dari int ke long<br>
+<img src="img/percobaan2/perc2soal4.png" width="300px"><br><br>

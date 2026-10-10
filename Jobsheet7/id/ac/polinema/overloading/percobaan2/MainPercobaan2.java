@@ -9,5 +9,8 @@ public class MainPercobaan2 {
         Resolusi.tampil("Java");
         Resolusi.tampil();
         Resolusi.tampil(1, 2, 3);
+        // langkah 4
+        Resolusi.tampil((short) 3);
+        Resolusi.tampil('A');
     }
 }
