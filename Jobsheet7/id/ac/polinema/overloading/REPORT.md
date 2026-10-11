@@ -151,3 +151,14 @@ Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti
     <img src="img/percobaan4/perc4langkah4-3.png" width="400px"><br>
     - Tambahkan throws Exception pada swim() di Piranha :  
     <img src="img/percobaan4/perc4langkah4-4.png" width="400px"><br>
+
+**Jawaban Pertanyaan Percobaan 4** <br>
+1. super.swim() berfungsi untuk memanggil method swim() milik class induk (Ikan) dari dalam class anak (Piranha). Jika baris itu dihapus, teks "Ikan bisa berenang" tidak akan dicetak, dan hanya memunculkan "Piranha bisa makan daging"<br>
+2. Covariant return memungkinkan method overriding mengembalikan tipe data objek yang merupakan subclass dari tipe kembalian aslinya. Pemanggilan Piranha anak = c.beranak(); valid karena method beranak() pada Piranha mengembalikan objek bertipe Piranha sendiri, sehingga variabel penampungnya tidak perlu melakukan casting manual<br>
+3. - Hapus public di Piranha : Melanggar aturan hak akses tidak boleh lebih sempit dari superclass<br>
+    - Tambahkan final di Ikan : Melanggar aturan bahwa method yang bersifat final tidak boleh di-override<br>
+    - Ubah parameter swim(int jarak) dengan @Override : Melanggar karena method tersebut tidak cocok dengan signature induknya<br>
+    - Tambahkan throws Exception: Melanggar aturan karena method overriding tidak boleh melempar checked exception baru yang tidak dideklarasikan oleh method aslinya<br>
+4. Jika @Override dihapus, kode akan lolos kompilasi tanpa error. Jika @Override dihapus, kode akan lolos kompilasi tanpa error<br>
+5. Terjadi error kompilasi karena method private di class induk sifatnya tersembunyi dan tidak bisa diwarisi, sehingga Piranha tidak dianggap melakukan override melainkan membuat method baru<br>
+<img src="img/percobaan4/perc4soal5.png" width="400px"><br>
