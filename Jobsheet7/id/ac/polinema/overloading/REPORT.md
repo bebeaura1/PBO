@@ -161,8 +161,20 @@ Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti
     - Tambahkan throws Exception: Melanggar aturan karena method overriding tidak boleh melempar checked exception baru yang tidak dideklarasikan oleh method aslinya<br>
 4. Jika @Override dihapus, kode akan lolos kompilasi tanpa error. Jika @Override dihapus, kode akan lolos kompilasi tanpa error<br>
 5. Terjadi error kompilasi karena method private di class induk sifatnya tersembunyi dan tidak bisa diwarisi, sehingga Piranha tidak dianggap melakukan override melainkan membuat method baru<br>
-<img src="img/percobaan4/perc4soal5.png" width="400px"><br>
+<img src="img/percobaan4/perc4soal5.png" width="400px"><br><br>
 
 ## - Percobaan 5: Overloading dan Overriding Bersama (Karyawan, Staff, Manager)
 Untuk hasil running program pada percobaan 5 yaitu seperti dibawah ini.<br>
 <img src="img/percobaan5/perc5.png" width="300px"><br>
+
+**Jawaban Pertanyaan Percobaan 5** <br>
+1. - Overloading terdapat pada class Staff dengan signature getGaji(int jamLembur, double tarifLembur) dan getGaji(). Pembedanya adalah jumlah dan tipe parameter yang diterima.
+    - Overriding :
+        - Terdapat pada class Staff dengan signature getGaji() dan lihatInfo()
+        - Terdapat pada class Manager dengan signature getGaji() dan lihatInfo()
+        - Pembedanya adalah signature kedua method tersebut sama persis dengan method milik superclass-nya (Karyawan)
+2. getGaji(int, double) memakai super.getGaji() untuk mengambil gaji pokok dasar langsung dari class induk (Karyawan), sedangkan getGaji() pada Staff memanggil versi overload nya (getGaji(jamLembur, tarifLembur)) agar perhitungan gaji pokok otomatis digabungkan dengan lembur.<br>
+Jika isi getGaji(int, double) diganti menjadi return getGaji() + jamLembur * tarifLembur;, program akan mengalami rekursif tanpa henti karena method tersebut akan memanggil dirinya sendiri secara terus menerus<br>
+3. Akibatnya, gaji total Staff hanya akan dihitung dari uang lemburnya saja tanpa menjumlahkan gaji pokok dari class Karyawan. Gaji Manager tidak ikut berubah karena Manager memiliki implementasi method getGaji() sendiri yang memanggil super.getGaji() + tunjangan secara terpisah.<br>
+4. Hubungan Manager dengan Staff adalah has-a (agregasi) yang ditunjukkan melalui atribut array private Staff[] bawahan; di dalam class Manager.<br>
+Hubungan tersebut berbeda dengan hubungan Manager dengan Karyawan yang merupakan is-a (pewarisan / inheritance), di mana Manager mewarisi sifat dan atribut dari class Karyawan (public class Manager extends Karyawan).<br>
