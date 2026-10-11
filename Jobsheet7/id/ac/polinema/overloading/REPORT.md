@@ -162,3 +162,7 @@ Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti
 4. Jika @Override dihapus, kode akan lolos kompilasi tanpa error. Jika @Override dihapus, kode akan lolos kompilasi tanpa error<br>
 5. Terjadi error kompilasi karena method private di class induk sifatnya tersembunyi dan tidak bisa diwarisi, sehingga Piranha tidak dianggap melakukan override melainkan membuat method baru<br>
 <img src="img/percobaan4/perc4soal5.png" width="400px"><br>
+
+## - Percobaan 5: Overloading dan Overriding Bersama (Karyawan, Staff, Manager)
+Untuk hasil running program pada percobaan 5 yaitu seperti dibawah ini.<br>
+<img src="img/percobaan5/perc5.png" width="300px"><br>
