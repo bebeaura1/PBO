@@ -77,7 +77,7 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
         | tampil(long), tampil(Integer),   | 3.5       |
         | dan tampil(Object) dikomentari   |           |
         +----------------------------------------------+
-         ```
+    ```
 - Hasil Langkah 3<br>
     - Semua overload aktif :  
     <img src="img/percobaan2/perc2langkah3-1.png" width="400px"><br>
@@ -140,7 +140,7 @@ Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti
         | Exception pada swim()   | throws clause in Ikan.swim()                   |
         | di Piranha              |                                                |
         +--------------------------------------------------------------------------+
-         ```
+    ```
 
 - Hasil Langkah 4 : <br>
     - Hapus public pada swim() di Piranha :  
@@ -180,7 +180,7 @@ Jika isi getGaji(int, double) diganti menjadi return getGaji() + jamLembur * tar
 Hubungan tersebut berbeda dengan hubungan Manager dengan Karyawan yang merupakan is-a (pewarisan / inheritance), di mana Manager mewarisi sifat dan atribut dari class Karyawan (public class Manager extends Karyawan).<br><br>
 
 ## Tugas Mandiri
-1. Tugas 1<br>
+1. Tugas 1 : Overloading pada class Segitiga<br>
     - Input :<br>
         - Class Segitiga<br>
         <img src="img/tugas1/input1.png" width="500px"><br>
@@ -194,7 +194,7 @@ Hubungan tersebut berbeda dengan hubungan Manager dengan Karyawan yang merupakan
     - (b) Jika keliling(3, 4.0) dijalankan, program akan error. Pesan error yang muncul adalah "The method keliling(int, int) in the type Segitiga is not applicable for the arguments (int, double)". Alasannya adalah tipe data argumen kedua yang diberikan adalah double (4.0), sedangkan method keliling yang tersedia pada class Segitiga hanya dirancang untuk menerima parameter bertipe int (keliling(int, int)). Java tidak dapat melakukan konversi otomatis dari double ke int serta tidak menemukan overload method lain yang cocok dengan parameter tersebut.<br>
     <img src="img/tugas1/erorsoal.png" width="700px"><br><br>
 
-2. Tugas 2<br>
+2. Tugas 2 : Overriding pada Manusia, Dosen, dan Mahasiswa<br>
     - Input :<br>
         - Class Dosen<br>
         <img src="img/tugas2/dosen.png" width="500px"><br>
@@ -214,4 +214,44 @@ Hubungan tersebut berbeda dengan hubungan Manager dengan Karyawan yang merupakan
     Pada objek Mahasiswa, method makan() di-override tanpa memanggil super.makan(). Hasilnya hanya :<br>
     <img src="img/tugas2/soalbeda2.png" width="300px"><br>
     Teks "Manusia makan nasi" tidak muncul.<br><br>
-    Peran super.makan() adalah memanggil implementasi method makan() dari superclass (Manusia). Dengan begitu, perilaku dasar dari parent tetap dijalankan, lalu subclass menambahkan perilaku khususnya sendiri. Jika super.makan() dihapus dari Dosen, maka output Dosen hanya akan mencetak "Dosen makan di kantin fakultas" saja, sama seperti pola pada Mahasiswa.
+    Peran super.makan() adalah memanggil implementasi method makan() dari superclass (Manusia). Dengan begitu, perilaku dasar dari parent tetap dijalankan, lalu subclass menambahkan perilaku khususnya sendiri. Jika super.makan() dihapus dari Dosen, maka output Dosen hanya akan mencetak "Dosen makan di kantin fakultas" saja, sama seperti pola pada Mahasiswa.<br><br>
+
+3. Tugas 3 : Jawab singkat<br>
+    1. Tabel perbandingan<br>
+        ```
+            +--------------------------------------------------------------------+
+            | Aspek            | Overloading            | Overriding             |
+            |------------------|------------------------|------------------------|
+            | Lokasi terjadi   | Di dalam satu class,   | Hanya di subclass yang |
+            |                  | atau antara superclass | mewarisi superclass    |
+            |                  | dan subclass           |                        |
+            |------------------|------------------------|------------------------|
+            | Signature        | Berbeda: jumlah, tipe, | Sama persis: nama      |
+            | (parameter)      | atau urutan parameter  | method dan daftar      |
+            |                  | berbeda                | parameter sama         |
+            |------------------|------------------------|------------------------|
+            | Tipe kembalian   | Boleh sama, boleh      | Harus sama, atau       |
+            |                  | berbeda                | covariant return       |
+            |                  |                        | (subclass dari tipe    |
+            |                  |                        | return parent) untuk   |
+            |                  |                        | tipe reference         |
+            |------------------|------------------------|------------------------|
+            | Access modifier  | Bebas, tidak ada       | Tidak boleh lebih      |
+            |                  | aturan khusus          | ketat/restriktif dari  |
+            |                  |                        | method parent; boleh   |
+            |                  |                        | sama atau lebih luas   |
+            |------------------|-------------------------------------------------|
+            | Peran @Override  | Tidak digunakan; jika  | Dianjurkan untuk       |
+            |                  | dipasang pada method   | memastikan compiler    |
+            |                  | yang bukan overriding  | memverifikasi bahwa    |
+            |                  | akan error             | method benar-benar     |
+            |                  |                        | meng override          |
+            +--------------------------------------------------------------------+
+        ```
+
+    2. - Overloading dipilih ketika kita butuh beberapa method dengan fungsi mirip tetapi parameternya berbeda. Contoh dari jobsheet adalah pada class Perkalian, method kali(int, int), kali(int, int, int), dan kali(double, double) memiliki nama sama tetapi daftar parameter berbeda
+        - Overriding dipilih ketika subclass ingin mengubah atau memperluas perilaku method warisan dari superclass tanpa mengubah signaturenya. Contoh dari jobsheet adalah pada class Piranha, method swim() meng-override method swim() milik class Ikan<br><br>
+
+    3. - Method static tidak bisa di override karena method static terikat pada class, bukan pada objek, sehingga pemilihan method berdasarkan objek saat runtime tidak berlaku.
+        - Method private tidak bisa di override karena method private tidak diwariskan ke subclass, jadi subclass tidak punya akses untuk menimpanya.
+        - Method final tidak bisa di override karena kata kunci final memang dirancang untuk melarang method ditimpa, dan compiler akan menolak jika subclass mencobanya.
