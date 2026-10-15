@@ -192,4 +192,26 @@ Hubungan tersebut berbeda dengan hubungan Manager dengan Karyawan yang merupakan
     **Jawaban Pertanyaan Analisis :**<br>
     - (a) Iya, yang membuatnya sah adalah karena jumlah parameternya yang berbeda. Method keliling(3, 4, 5) memiliki parameter 3 sedangkan pada method keliling(3, 4) hanya memiliki 2 parameter.<br>
     - (b) Jika keliling(3, 4.0) dijalankan, program akan error. Pesan error yang muncul adalah "The method keliling(int, int) in the type Segitiga is not applicable for the arguments (int, double)". Alasannya adalah tipe data argumen kedua yang diberikan adalah double (4.0), sedangkan method keliling yang tersedia pada class Segitiga hanya dirancang untuk menerima parameter bertipe int (keliling(int, int)). Java tidak dapat melakukan konversi otomatis dari double ke int serta tidak menemukan overload method lain yang cocok dengan parameter tersebut.<br>
-    <img src="img/tugas1/erorsoal.png" width="700px"><br>
+    <img src="img/tugas1/erorsoal.png" width="700px"><br><br>
+
+2. Tugas 2<br>
+    - Input :<br>
+        - Class Dosen<br>
+        <img src="img/tugas2/dosen.png" width="500px"><br>
+        - Class Mahasiswa<br>
+        <img src="img/tugas2/mahasiswa.png" width="600px"><br>
+        - Class MainTugas2<br>
+        <img src="img/tugas2/manusia.png" width="600px"><br>
+        - Class MainTugas2<br>
+        <img src="img/tugas2/main.png" width="600px"><br>
+    - Output :<br>
+    <img src="img/tugas2/hasil.png" width="300px"><br><br>
+
+    **Jawaban Pertanyaan Analisis :**<br>
+    - (a) Karena method bernafas() tidak di override oleh class Mahasiswa. Ketika objek Mahasiswa memanggil bernafas(), maka method warisan dari Manusia yang dijalankan, sehingga outputnya adalah "Manusia bernafas dengan paru-paru". Sebaliknya, method makan() di override di class Mahasiswa. Oleh karena itu, saat objek Mahasiswa memanggil makan(), yang dijalankan adalah versi milik Mahasiswa bukan versi Manusia<br>
+    - (b) Pada objek Dosen, method makan() di override dan di dalamnya memanggil super.makan() terlebih dahulu baru kemudian mencetak "Dosen makan di kantin fakultas". Hasilnya :<br>
+    <img src="img/tugas2/soalbeda1.png" width="300px"><br>
+    Pada objek Mahasiswa, method makan() di-override tanpa memanggil super.makan(). Hasilnya hanya :<br>
+    <img src="img/tugas2/soalbeda2.png" width="300px"><br>
+    Teks "Manusia makan nasi" tidak muncul.<br><br>
+    Peran super.makan() adalah memanggil implementasi method makan() dari superclass (Manusia). Dengan begitu, perilaku dasar dari parent tetap dijalankan, lalu subclass menambahkan perilaku khususnya sendiri. Jika super.makan() dihapus dari Dosen, maka output Dosen hanya akan mencetak "Dosen makan di kantin fakultas" saja, sama seperti pola pada Mahasiswa.
