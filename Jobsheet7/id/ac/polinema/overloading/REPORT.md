@@ -177,4 +177,19 @@ Untuk hasil running program pada percobaan 5 yaitu seperti dibawah ini.<br>
 Jika isi getGaji(int, double) diganti menjadi return getGaji() + jamLembur * tarifLembur;, program akan mengalami rekursif tanpa henti karena method tersebut akan memanggil dirinya sendiri secara terus menerus<br>
 3. Akibatnya, gaji total Staff hanya akan dihitung dari uang lemburnya saja tanpa menjumlahkan gaji pokok dari class Karyawan. Gaji Manager tidak ikut berubah karena Manager memiliki implementasi method getGaji() sendiri yang memanggil super.getGaji() + tunjangan secara terpisah.<br>
 4. Hubungan Manager dengan Staff adalah has-a (agregasi) yang ditunjukkan melalui atribut array private Staff[] bawahan; di dalam class Manager.<br>
-Hubungan tersebut berbeda dengan hubungan Manager dengan Karyawan yang merupakan is-a (pewarisan / inheritance), di mana Manager mewarisi sifat dan atribut dari class Karyawan (public class Manager extends Karyawan).<br>
+Hubungan tersebut berbeda dengan hubungan Manager dengan Karyawan yang merupakan is-a (pewarisan / inheritance), di mana Manager mewarisi sifat dan atribut dari class Karyawan (public class Manager extends Karyawan).<br><br>
+
+## Tugas Mandiri
+1. Tugas 1<br>
+    - Input :<br>
+        - Class Segitiga<br>
+        <img src="img/tugas1/input1.png" width="500px"><br>
+        - Class MainTugas1<br>
+        <img src="img/tugas1/input2.png" width="600px"><br>
+    - Output :<br>
+    <img src="img/tugas1/hasil.png" width="300px"><br><br>
+
+    **Jawaban Pertanyaan Analisis :**<br>
+    - (a) Iya, yang membuatnya sah adalah karena jumlah parameternya yang berbeda. Method keliling(3, 4, 5) memiliki parameter 3 sedangkan pada method keliling(3, 4) hanya memiliki 2 parameter.<br>
+    - (b) Jika keliling(3, 4.0) dijalankan, program akan error. Pesan error yang muncul adalah "The method keliling(int, int) in the type Segitiga is not applicable for the arguments (int, double)". Alasannya adalah tipe data argumen kedua yang diberikan adalah double (4.0), sedangkan method keliling yang tersedia pada class Segitiga hanya dirancang untuk menerima parameter bertipe int (keliling(int, int)). Java tidak dapat melakukan konversi otomatis dari double ke int serta tidak menemukan overload method lain yang cocok dengan parameter tersebut.<br>
+    <img src="img/tugas1/erorsoal.png" width="700px"><br>
