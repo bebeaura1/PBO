@@ -35,3 +35,8 @@ Error ini sama persis dengan Vegetarian v2 = l; pada GambaranDasar, di mana Lion
 6. - Tipe Referensi: Tipe data variabel saat deklarasi/kompilasi (Animal), yang menentukan method atau field apa saja yang boleh dipanggil oleh programmer.
     - Tipe Objek: Tipe data asli dari objek yang dibuat di memori heap saat runtime dengan new (Deer), yang menentukan versi eksekusi aktual dari method tersebut<br>
 7. Polimorfisme memungkinkan sebuah variabel referensi bertipe superclass atau interface untuk menunjuk objek dari subclass atau class implementor-nya. Hal ini memungkinkan satu variabel memiliki banyak bentuk perilaku sesuai objek aslinya.<br>
+
+## - Percobaan 2: Virtual Method Invocation
+Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti dibawah ini.<br>
+- Langkah 2 :<br>
+<img src="img/percobaan2/langkah2.png" width="500px"><br>
