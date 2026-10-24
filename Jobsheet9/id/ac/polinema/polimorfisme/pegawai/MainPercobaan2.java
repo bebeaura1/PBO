@@ -13,5 +13,8 @@ public class MainPercobaan2 {
         e = iEmp;
         System.out.println("------------------");
         System.out.println(e.getEmployeeInfo());
+
+        // Langkah 4
+        System.out.println(e.getSalary());
     }
 }

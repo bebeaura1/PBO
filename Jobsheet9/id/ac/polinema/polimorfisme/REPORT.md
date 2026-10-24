@@ -42,3 +42,13 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
 <img src="img/percobaan2/langkah2.png" width="500px"><br>
 - Langkah 3 :<br>
 <img src="img/percobaan2/langkah3.png" width="500px"><br>
+- Langkah 4 :<br>
+<img src="img/percobaan2/langkah4.png" width="500px"><br>
+    ```
+        +-----------------------------------------------------------------------+
+        | Perubahan                     | Pesan error                           |
+        |-------------------------------|---------------------------------------|
+        | Panggil e.getSalary() pada e  | The method getSalary() is undefined   |
+        | bertipe Employee              | for the type Employee                 |
+        +-----------------------------------------------------------------------+
+    ```
