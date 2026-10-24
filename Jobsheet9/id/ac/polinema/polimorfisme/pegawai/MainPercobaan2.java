@@ -8,5 +8,10 @@ public class MainPercobaan2 {
         System.out.println(e.getEmployeeInfo());
         System.out.println("------------------");
         System.out.println(pEmp.getEmployeeInfo());
+
+        InternshipEmpoyee iEmp = new InternshipEmpoyee("Sunarto", 5);
+        e = iEmp;
+        System.out.println("------------------");
+        System.out.println(e.getEmployeeInfo());
     }
 }

@@ -40,3 +40,5 @@ Error ini sama persis dengan Vegetarian v2 = l; pada GambaranDasar, di mana Lion
 Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti dibawah ini.<br>
 - Langkah 2 :<br>
 <img src="img/percobaan2/langkah2.png" width="500px"><br>
+- Langkah 3 :<br>
+<img src="img/percobaan2/langkah3.png" width="500px"><br>
