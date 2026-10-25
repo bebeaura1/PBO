@@ -100,3 +100,11 @@ Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti
         | berikut dan jalankan    | ElectricityBill to Employee           |
         +-----------------------------------------------------------------+
     ```
+
+**Jawaban Pertanyaan Percobaan 4** <br>
+1. Karena baik ElectricityBill (eBill) maupun PermanentEmployee (pEmp) sama-sama meng-implements interface Payable<br>
+2. Agar method pay() bersifat fleksibel dan gampang dikembangkan. Method ini dapat menerima objek apa saja dari class mana pun selama class tersebut meng-implements Payable, tanpa perlu membuat method overload terpisah untuk tiap jenis pembayaran<br>
+3. Karena iEmp (InternshipEmployee) tidak meng-implements interface Payable, sehingga tidak memenuhi syarat parameter dari method pay(Payable p)<br>
+4. Untuk mengecek secara aman (type checking) apakah objek yang ditunjuk oleh referensi p benar-benar merupakan instansiasi dari class ElectricityBill sebelum dilakukan downcasting, sehingga terhindar dari ClassCastException<br>
+5. Casting (downcasting) diperlukan untuk mengubah tipe referensi variabel dari Payable menjadi ElectricityBill. Hal ini wajib dilakukan agar kita dapat memanggil method getBillInfo(), karena method tersebut hanya dimiliki oleh class ElectricityBill dan tidak ada di dalam interface Payable<br>
+6. Kode lolos kompilasi karena compiler hanya melihat bahwa e bertipe Employee dan PermanentEmployee adalah subclass dari Employee, sehingga casting dianggap secara hirarki memungkinkan. Kode gagal saat dijalankan karena objek asli yang berada di memori adalah InternshipEmployee, yang tidak memiliki relasi kekeluargaan langsung dengan PermanentEmployee. instanceof mencegah hal ini dengan memvalidasi tipe objek aktual terlebih dahulu: if (e instanceof PermanentEmployee). Casting hanya dilakukan jika hasil evaluasinya bernilai true.<br><br>
