@@ -59,3 +59,8 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
 3. Virtual Method Invocation adalah mekanisme pemanggilan method hasil overriding melalui variabel referensi polimorfik. Disebut virtual karena method yang terlihat oleh compiler (berdasarkan tipe referensi) berbeda dengan versi method yang seandainya/sebenarnya dieksekusi oleh JVM saat program berjalan (berdasarkan tipe objek)<br>
 4. Karena isi objek dari variabel e telah diubah dari PermanentEmployee menjadi InternshipEmployee. Versi method getEmployeeInfo() yang dijalankan selalu menyesuaikan tipe objek yang sedang ditunjuk oleh e<br>
 5. Karena compiler melakukan pemeriksaan kelayakan syntax berdasarkan tipe referensi (Employee), bukan tipe objek. Class Employee tidak memiliki method getSalary(), sehingga compiler menganggap method tersebut tidak ada / cannot find symbol.<br><br>
+
+## - Percobaan 3: Heterogeneous Collection
+Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti dibawah ini :<br>
+- Langkah 2 :<br>
+<img src="img/percobaan3/langkah2.png" width="500px"><br>
