@@ -15,6 +15,6 @@ public class MainPercobaan2 {
         System.out.println(e.getEmployeeInfo());
 
         // Langkah 4
-        System.out.println(e.getSalary());
+        // System.out.println(e.getSalary());
     }
 }
