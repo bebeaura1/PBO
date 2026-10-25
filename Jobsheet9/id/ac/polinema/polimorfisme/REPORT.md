@@ -64,3 +64,13 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
 Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti dibawah ini :<br>
 - Langkah 2 :<br>
 <img src="img/percobaan3/langkah2.png" width="500px"><br>
+- Langkah 3 :<br>
+<img src="img/percobaan3/langkah3.png" width="500px"><br>
+    ```
+        +-----------------------------------------------------------------------+
+        | Perubahan                     | Pesan error                           |
+        |-------------------------------|---------------------------------------|
+        | Aktifkan baris Employee[] e2  | Type mismatch: cannot convert from    |
+        | = {pEmp, iEmp, eBill};        | ElectricityBill to Employee           |
+        +-----------------------------------------------------------------------+
+    ```
