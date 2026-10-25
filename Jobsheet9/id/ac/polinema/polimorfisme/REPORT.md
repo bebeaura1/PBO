@@ -80,3 +80,8 @@ Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti
 2. Karena tipe dari array p adalah Payable[] (interface), sehingga mampu menampung semua objek dari class mana pun yang meng-implements interface Payable<br>
 3. Karena eBill adalah objek dari class ElectricityBill yang bukan turunan dari Employee, sehingga tidak memenuhi syarat tipe data untuk dimasukkan ke dalam Employee[]<br>
 4. Hal ini terjadi karena penerapan Virtual Method Invocation (VMI). Walaupun dipanggil lewat variabel penampung bertipe Employee, JVM mengeksekusi method getEmployeeInfo() sesuai versi milik objek asli dari masing-masing elemen array (elemen 1 mengeksekusi versi PermanentEmployee, elemen 2 mengeksekusi versi InternshipEmployee)<br><br>
+
+## - Percobaan 4: Polymorphic Argument, instanceof, dan Casting Objek
+Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti dibawah ini :<br>
+- Langkah 3 :<br>
+<img src="img/percobaan4/langkah3.png" width="500px"><br>
