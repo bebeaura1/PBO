@@ -53,7 +53,7 @@ Untuk hasil running program pada percobaan 2 pada beberapa langkah yaitu seperti
         +-----------------------------------------------------------------------+
     ```
 
-**Jawaban Pertanyaan Percobaan 1** <br>
+**Jawaban Pertanyaan Percobaan 2** <br>
 1. Karena variabel e dan pEmp menunjuk ke objek yang sama di memori, yaitu objek PermanentEmployee (Dedik)<br>
 2. Disebut pemanggilan method virtual pada e karena compiler mengenali method berdasarkan tipe referensi Employee, tetapi saat dijalankan, java secara dinamis memanggil versi overriding milik PermanentEmployee. Sedangkan pEmp sudah secara langsung bertipe PermanentEmployee dari awal sehingga tidak memerlukan resolusi tipe secara dinamis<br>
 3. Virtual Method Invocation adalah mekanisme pemanggilan method hasil overriding melalui variabel referensi polimorfik. Disebut virtual karena method yang terlihat oleh compiler (berdasarkan tipe referensi) berbeda dengan versi method yang seandainya/sebenarnya dieksekusi oleh JVM saat program berjalan (berdasarkan tipe objek)<br>
@@ -74,3 +74,9 @@ Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti
         | = {pEmp, iEmp, eBill};        | ElectricityBill to Employee           |
         +-----------------------------------------------------------------------+
     ```
+
+**Jawaban Pertanyaan Percobaan 3** <br>
+1. Karena tipe dari array e adalah Employee[] (superclass), sehingga mampu menampung semua objek yang merupakan turunan dari Employee<br>
+2. Karena tipe dari array p adalah Payable[] (interface), sehingga mampu menampung semua objek dari class mana pun yang meng-implements interface Payable<br>
+3. Karena eBill adalah objek dari class ElectricityBill yang bukan turunan dari Employee, sehingga tidak memenuhi syarat tipe data untuk dimasukkan ke dalam Employee[]<br>
+4. Hal ini terjadi karena penerapan Virtual Method Invocation (VMI). Walaupun dipanggil lewat variabel penampung bertipe Employee, JVM mengeksekusi method getEmployeeInfo() sesuai versi milik objek asli dari masing-masing elemen array (elemen 1 mengeksekusi versi PermanentEmployee, elemen 2 mengeksekusi versi InternshipEmployee)<br><br>
