@@ -85,3 +85,18 @@ Untuk hasil running program pada percobaan 3 pada beberapa langkah yaitu seperti
 Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti dibawah ini :<br>
 - Langkah 3 :<br>
 <img src="img/percobaan4/langkah3.png" width="500px"><br>
+- Langkah 4 :<br>
+    - <img src="img/percobaan4/langkah4_1.png" width="500px"><br><br>
+    - <img src="img/percobaan4/langkah4_2.png" width="500px"><br>
+    ```
+        +-----------------------------------------------------------------+
+        | Perubahan               | Hasil                                 |
+        |-------------------------|---------------------------------------|
+        | Tambahkan ow.pay(iEmp); | The method pay(Payable) in the type   |
+        | di akhir main pada      | Owner is not applicable for the       |
+        | MainPercobaan4          | arguments (InternshipEmpoyee)         |
+        |-------------------------|---------------------------------------|
+        | Buat class Eksperimen4  | Type mismatch: cannot convert from    |
+        | berikut dan jalankan    | ElectricityBill to Employee           |
+        +-----------------------------------------------------------------+
+    ```

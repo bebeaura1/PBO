@@ -16,5 +16,8 @@ public class MainPercobaan4 {
         ow.showMyEmployee(pEmp); // info pegawai tetap
         System.out.println("---------------------------------");
         ow.showMyEmployee(iEmp); // info pegawai magang
+
+        // langkah 4
+        // ow.pay(iEmp);
     }
 }
