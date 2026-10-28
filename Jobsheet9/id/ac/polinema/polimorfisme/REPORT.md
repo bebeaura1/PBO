@@ -134,3 +134,14 @@ Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti
     - (b) Tipe referensi nya adalah Destroyable karena parameter d bertipe Destroyable. Tipe objeknya berubah=ubah sesuai objek yang dikirimkan, yaitu WalkingZombie, JumpingZombie, atau Barrier. Kemudian yang dijalankan adalah saat p.doDestroy(wz) dipanggil maka yang dijalankan adalah versi destroyed() milik WalkingZombie, saat p.doDestroy(jz) dipanggil maka yang dijalankan adalah versi destroyed() milik JumpingZombie, Saat p.doDestroy(b) dipanggil maka yang dijalankan adalah versi destroyed() milik Barrier<br>
     - (c) Terjadi error saat proses kompilasi (compile-time error). Alasannya karena class Zombie dideklarasikan sebagai abstract class, di mana aturan Java melarang keras instansiasi objek secara langsung dari abstract class menggunakan kata kunci new. Pesan Error yang muncul adalah Cannot instantiate the type Zombie<br>
         <img src="img/tugas1/soal-c.png" width="300px"><br><br>
+
+2. Tugas 2 : Heterogeneous collection, instanceof, dan casting<br>
+    - Input :<br>
+        - Class MainTugas2<br>
+        <img src="img/tugas2/main.png" width="600px"><br>
+    - Output :<br>
+    <img src="img/tugas2/hasil.png" width="300px"><br><br>
+    **Jawaban Pertanyaan Analisis :**<br>
+    - (a) Karena array tersebut digunakan untuk menampung objek WalkingZombie, JumpingZombie, sekaligus objek Barrier secara bersamaan. Class Barrier merupakan turunan langsung dari interface Destroyable, tetapi bukan turunan dari class Zombie. Jika array dideklarasikan bertipe Zombie[], maka objek Barrier tidak akan bisa dimasukkan ke dalam array tersebut<br>
+    - (b) Karena elemen di dalam array disimpan dengan tipe referensi interface Destroyable, sedangkan method heal() hanya didefinisikan di dalam class Zombie (dan class turunannya) serta tidak ada di dalam interface Destroyable<br>
+    - (c) Program akan tetap bisa lolos proses kompilasi, namun akan langsung error saat program dijalankan dengan melemparkan exception java.lang.ClassCastException. Hal ini terjadi karena objek asli dari Barrier di memori tidak bisa diubah paksa menjadi Zombie.<br><br>
