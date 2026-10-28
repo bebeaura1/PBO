@@ -108,3 +108,29 @@ Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti
 4. Untuk mengecek secara aman (type checking) apakah objek yang ditunjuk oleh referensi p benar-benar merupakan instansiasi dari class ElectricityBill sebelum dilakukan downcasting, sehingga terhindar dari ClassCastException<br>
 5. Casting (downcasting) diperlukan untuk mengubah tipe referensi variabel dari Payable menjadi ElectricityBill. Hal ini wajib dilakukan agar kita dapat memanggil method getBillInfo(), karena method tersebut hanya dimiliki oleh class ElectricityBill dan tidak ada di dalam interface Payable<br>
 6. Kode lolos kompilasi karena compiler hanya melihat bahwa e bertipe Employee dan PermanentEmployee adalah subclass dari Employee, sehingga casting dianggap secara hirarki memungkinkan. Kode gagal saat dijalankan karena objek asli yang berada di memori adalah InternshipEmployee, yang tidak memiliki relasi kekeluargaan langsung dengan PermanentEmployee. instanceof mencegah hal ini dengan memvalidasi tipe objek aktual terlebih dahulu: if (e instanceof PermanentEmployee). Casting hanya dilakukan jika hasil evaluasinya bernilai true.<br><br>
+
+## Tugas Mandiri
+1. Tugas 1 : Permainan Zombie, Barrier, dan Plant<br>
+    - Input :<br>
+        - Class Destroyable<br>
+        <img src="img/tugas1/destroyable.png" width="500px"><br>
+        - Class Zombie<br>
+        <img src="img/tugas1/zombie.png" width="600px"><br>
+        - Class WalkingZombie<br>
+        <img src="img/tugas1/walkingzombie.png" width="500px"><br>
+        - Class JumpingZombie<br>
+        <img src="img/tugas1/jumpingzombie.png" width="600px"><br>
+        - Class Barrier<br>
+        <img src="img/tugas1/barrier.png" width="500px"><br>
+        - Class Plant<br>
+        <img src="img/tugas1/plant.png" width="600px"><br>
+        - Class MainTugas1<br>
+        <img src="img/tugas1/main.png" width="600px"><br>
+    - Output :<br>
+    <img src="img/tugas1/hasil.png" width="300px"><br><br>
+
+    **Jawaban Pertanyaan Analisis :**<br>
+    - (a) Karena parameter pada method doDestroy() bertipe interface Destroyable (public void doDestroy(Destroyable d)). Meskipun Zombie (induk dari WalkingZombie dan JumpingZombie) dan Barrier tidak berada dalam satu hierarki class turunan yang sama, ketiganya sama sama mengimplements interface yang sama, yaitu Destroyable. Dalam polimorfisme, tipe interface dapat menampung objek apa pun dari class mana pun yang mengimplementasikannya<br>
+    - (b) Tipe referensi nya adalah Destroyable karena parameter d bertipe Destroyable. Tipe objeknya berubah=ubah sesuai objek yang dikirimkan, yaitu WalkingZombie, JumpingZombie, atau Barrier. Kemudian yang dijalankan adalah saat p.doDestroy(wz) dipanggil maka yang dijalankan adalah versi destroyed() milik WalkingZombie, saat p.doDestroy(jz) dipanggil maka yang dijalankan adalah versi destroyed() milik JumpingZombie, Saat p.doDestroy(b) dipanggil maka yang dijalankan adalah versi destroyed() milik Barrier<br>
+    - (c) Terjadi error saat proses kompilasi (compile-time error). Alasannya karena class Zombie dideklarasikan sebagai abstract class, di mana aturan Java melarang keras instansiasi objek secara langsung dari abstract class menggunakan kata kunci new. Pesan Error yang muncul adalah Cannot instantiate the type Zombie<br>
+        <img src="img/tugas1/soal-c.png" width="300px"><br><br>
