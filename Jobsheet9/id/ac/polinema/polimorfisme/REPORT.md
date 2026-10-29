@@ -138,10 +138,65 @@ Untuk hasil running program pada percobaan 4 pada beberapa langkah yaitu seperti
 2. Tugas 2 : Heterogeneous collection, instanceof, dan casting<br>
     - Input :<br>
         - Class MainTugas2<br>
-        <img src="img/tugas2/main.png" width="600px"><br>
+        <img src="img/tugas2/main.png" width="400px"><br>
     - Output :<br>
-    <img src="img/tugas2/hasil.png" width="300px"><br><br>
+    <img src="img/tugas2/hasil.png" width="200px"><br><br>
     **Jawaban Pertanyaan Analisis :**<br>
     - (a) Karena array tersebut digunakan untuk menampung objek WalkingZombie, JumpingZombie, sekaligus objek Barrier secara bersamaan. Class Barrier merupakan turunan langsung dari interface Destroyable, tetapi bukan turunan dari class Zombie. Jika array dideklarasikan bertipe Zombie[], maka objek Barrier tidak akan bisa dimasukkan ke dalam array tersebut<br>
     - (b) Karena elemen di dalam array disimpan dengan tipe referensi interface Destroyable, sedangkan method heal() hanya didefinisikan di dalam class Zombie (dan class turunannya) serta tidak ada di dalam interface Destroyable<br>
     - (c) Program akan tetap bisa lolos proses kompilasi, namun akan langsung error saat program dijalankan dengan melemparkan exception java.lang.ClassCastException. Hal ini terjadi karena objek asli dari Barrier di memori tidak bisa diubah paksa menjadi Zombie.<br><br>
+    
+3. Tugas 3 : Prediksi hasil kompilasi<br>
+    ```
+        +----------------------------------------------------------------------------+
+        | Pernyataan                       | Prediksi   | Alasan                     |
+        |----------------------------------|------------|----------------------------|
+        | Zombie z = new WalkingZombie(100,| OK         | subclass (WalkingZombie)   |
+        | 1);                              |            | dimasukkan ke referensi    |
+        |                                  |            | superclass (Zombie)        |
+        |----------------------------------|------------|----------------------------|
+        | Destroyable d = z;               | OK         | class yang mengimplements  |
+        |                                  |            | interface dapat masuk ke   |
+        |                                  |            | referensi interface        |
+        |                                  |            | (Destroyable)              |
+        |----------------------------------|------------|----------------------------|
+        | Zombie z2 = d;                   | error      | Interface (Destroyable)    |
+        |                                  | kompilasi  | tidak bisa langsung di     |
+        |                                  |            | masukkan ke class (Zombie) |
+        |                                  |            | tanpa casting              |
+        |----------------------------------|------------|----------------------------|
+        | Zombie z3 = (Zombie) d;          | OK         | Downcasting eksplisit yang |
+        |                                  |            | sah karena objek aslinya   |
+        |                                  |            | memang kompatibel          |
+        |----------------------------------|-----------------------------------------|
+        | Zombie z4 = new Zombie(100, 1);  | error      | Class Zombie bersifat      |
+        |                                  | kompilasi  | abstract, tidak boleh di   |
+        |                                  |            | instansiasi dengan new     |
+        |----------------------------------|------------|----------------------------|
+        | Destroyable d2 = new Plant();    | error      | Class Plant tidak meng-    |
+        |                                  | kompilasi  | implements interface       |
+        |                                  |            | Destroyable                |
+        |----------------------------------|------------|----------------------------|
+        | Zombie z5 = new JumpingZombie(   | error saat | Lolos kompilasi, tetapi    |
+        | 100, 2);                         | dijalankan | gagal saat runtime karena  |
+        | WalkingZombie w = (WalkingZombie)|            | objek aslinya JumpingZombie|
+        | z5;                              |            | dipaksa jadi WalkingZombie |
+        +----------------------------------------------------------------------------+
+    ```
+
+    **Bukti :**
+    - Zombie z = new WalkingZombie(100, 1);<br>
+    <img src="img/tugas3/p1.png" width="400px"><br>
+    - Destroyable d = z;<br>
+    <img src="img/tugas3/p2.png" width="400px"><br>
+    - Zombie z2 = d;<br>
+    <img src="img/tugas3/p3.png" width="400px"><br>
+    - Zombie z3 = (Zombie) d;<br>
+    <img src="img/tugas3/p4.png" width="400px"><br>
+    - Zombie z4 = new Zombie(100, 1);<br>
+    <img src="img/tugas3/p5.png" width="400px"><br>
+    - Destroyable d2 = new Plant();<br>
+    <img src="img/tugas3/p6.png" width="400px"><br>
+    - Zombie z5 = new JumpingZombie(100, 2);<br>
+    WalkingZombie w = (WalkingZombie) z5;<br>
+    <img src="img/tugas3/p7.png" width="500px"><br>
