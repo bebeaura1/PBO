@@ -22,3 +22,10 @@ Setiap subclass biasa (konkret) yang menurunkan abstract class wajib meng-overri
 4. Hasil Error : Terjadi error kompilasi pada class Ikan karena gagal mengimplementasikan method abstract baru (bernapas()) yang diwariskan atau dideklarasikan.<br>
 <img src="img/percobaan1/soalno4.png" width="300px"><br>
 Aturan yang dilanggar adalah kewajiban subclass konkret untuk memenuhi semua kontrak abstract method dari induknya. Jika class Ikan ditambahkan method abstract baru di dalamnya atau di induknya tanpa di-override, maka Ikan melanggar aturan implementasi class non-abstract.<br><br>
+
+## - Percobaan 2: Interface
+Untuk hasil running program pada percobaan 2 yaitu seperti dibawah ini.<br>
+- Sebelum diperbaiki :<br>
+<img src="img/percobaan2/hasilP2_sebelum.png" width="400px"><br>
+- Setelah diperbaiki :<br>
+<img src="img/percobaan2/hasilP2_setelah.png" width="300px"><br>
