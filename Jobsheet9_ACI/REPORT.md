@@ -29,3 +29,12 @@ Untuk hasil running program pada percobaan 2 yaitu seperti dibawah ini.<br>
 <img src="img/percobaan2/hasilP2_sebelum.png" width="400px"><br>
 - Setelah diperbaiki :<br>
 <img src="img/percobaan2/hasilP2_setelah.png" width="300px"><br>
+
+**Jawaban Pertanyaan Percobaan 2** <br>
+1. Pesan error : The method beriSertifikatCumlaude(ICumlaude) in the type Rektor is not applicable for the arguments (Mahasiswa).<br>
+Error terjadi karena objek mhsBiasa (bertipe Mahasiswa) dikirimkan ke parameter beriSertifikatCumlaude(ICumlaude mahasiswaCumlaude) dimana class Mahasiswa tidak meng-implements interface ICumlaude. Cara memperbaikinya adalah dengan menghapus atau memberi komentar pada baris pemanggilan pakRektor.beriSertifikatCumlaude(mhsBiasa); di class Program karena mahasiswa biasa tidak berhak mendapat sertifikat cumlaude.<br>
+2. Bisa. Karena class Sarjana merupakan turunan dari class Mahasiswa, sehingga secara otomatis class Sarjana mewarisi seluruh atribut dan method publik/protected yang dimiliki oleh class Mahasiswa, termasuk method kuliahDiKampus().<br>
+3. Tidak bisa secara langsung. Parameter mahasiswaCumlaude dideklarasikan bertipe interface ICumlaude. Di dalam interface ICumlaude, hanya terdapat kontrak method lulus() dan meraihIPKTinggi(). Compiler hanya mengenali anggota yang berasal dari tipe referensinya, dan interface ICumlaude tidak memiliki method kuliahDiKampus().<br>
+4. Hasil error :<br>
+<img src="img/percobaan2/hasilP2_setelah.png" width="300px"><br>
+Semua method di dalam sebuah interface otomatis bersifat public. Ketika sebuah class mengimplementasikan interface tersebut, method hasil override pada class tidak boleh memperkecil hak aksesnya (harus tetap setara, yaitu public)<br><br>
