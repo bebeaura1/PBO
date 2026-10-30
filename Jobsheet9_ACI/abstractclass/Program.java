@@ -13,5 +13,8 @@ public class Program {
 
         ani.ajakPeliharaJalanJalan();
         budi.ajakPeliharaJalanJalan();
+
+        // // soal no 2
+        // Hewan hewan = new Hewan();
     }
 }
