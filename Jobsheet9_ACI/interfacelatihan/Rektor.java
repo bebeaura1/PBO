@@ -10,4 +10,14 @@ public class Rektor {
 
         System.out.println("----------------------------------------");
     }
+
+    public void beriSertifikatMawapres(IBerprestasi mahasiswBerprestasi){
+        System.out.println("Saya REKTOR, memberikan sertifikat MAWAPRES.");
+        System.out.println("Selamat! Bagaimana Anda bisa berprestasi?");
+
+        mahasiswBerprestasi.menjuaraiKompetisi();
+        mahasiswBerprestasi.membuatPublikasiIlmiah();
+
+        System.out.println("----------------------------------------");
+    }
 }

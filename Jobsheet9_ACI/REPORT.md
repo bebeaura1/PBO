@@ -38,3 +38,10 @@ Error terjadi karena objek mhsBiasa (bertipe Mahasiswa) dikirimkan ke parameter 
 4. Hasil error :<br>
 <img src="img/percobaan2/hasilP2_setelah.png" width="300px"><br>
 Semua method di dalam sebuah interface otomatis bersifat public. Ketika sebuah class mengimplementasikan interface tersebut, method hasil override pada class tidak boleh memperkecil hak aksesnya (harus tetap setara, yaitu public)<br><br>
+
+## - Percobaan 3: Multiple Interface
+Untuk hasil running program pada percobaan 3 yaitu seperti dibawah ini :<br>
+- Sebelum diperbaiki :<br>
+<img src="img/percobaan3/hasilP3_sebelum.png" width="400px"><br>
+- Setelah diperbaiki :<br>
+<img src="img/percobaan3/hasilP3_setelah.png" width="300px"><br>
