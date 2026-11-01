@@ -45,3 +45,15 @@ Untuk hasil running program pada percobaan 3 yaitu seperti dibawah ini :<br>
 <img src="img/percobaan3/hasilP3_sebelum.png" width="400px"><br>
 - Setelah diperbaiki :<br>
 <img src="img/percobaan3/hasilP3_setelah.png" width="300px"><br>
+
+**Jawaban Pertanyaan Percobaan 3** <br>
+1. Hasil error : Cannot reduce the visibility of the inherited method from IBerprestasi<br>
+<img src="img/percobaan3/soalno1.png" width="300px"><br>
+Seluruh method didalam interface secara otomatis bersifat public. Interface dirancang sebagai kontrak terbuka untuk diakses dari luar, sehingga modifier akses selain public dilarang keras ditulis di dalam deklarasi method interface<br>
+2. Baris tersebut error karena interface tidak memiliki constructor dan tidak dapat diinstansiasi secara langsung menggunakan kata kunci new. Objek hanya dapat dibuat melalui class yang mengimplementasikannya<br>
+<img src="img/percobaan3/soalno2.png" width="300px"><br>
+3. - Kode :<br>
+    <img src="img/percobaan3/soalno3kode1.png" width="400px">
+    <img src="img/percobaan3/soalno3kode2.png" width="400px"><br>
+    - Hasil :<br>
+    <img src="img/percobaan3/soalno3hasil.png" width="300px"><br><br>

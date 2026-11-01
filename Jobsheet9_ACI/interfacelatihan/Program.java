@@ -12,7 +12,11 @@ public class Program {
         // pakRektor.beriSertifikatCumlaude(sarjanaCumlaude);
         // pakRektor.beriSertifikatCumlaude(masterCumlaude);
 
-        // pakRektor.beriSertifikatMawapres(sarjanaCumlaude);
+        // soal no 3
+        pakRektor.beriSertifikatMawapres(sarjanaCumlaude);
         pakRektor.beriSertifikatMawapres(masterCumlaude);
+
+        // soal no 2
+        // IBerprestasi prestasi = new IBerprestasi();
     }
 }
