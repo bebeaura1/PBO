@@ -57,3 +57,25 @@ Seluruh method didalam interface secara otomatis bersifat public. Interface dira
     <img src="img/percobaan3/soalno3kode2.png" width="400px"><br>
     - Hasil :<br>
     <img src="img/percobaan3/soalno3hasil.png" width="300px"><br><br>
+    
+## Tugas
+1. 
+    - Input :<br>
+        - Class Binatang<br>
+        <img src="img/tugas/binatang.png" width="500px"><br>
+        - Class IHerbivora<br>
+        <img src="img/tugas/iherbivora.png" width="500px"><br>
+        - Class IKarnivora<br>
+        <img src="img/tugas/ikarnivora.png" width="500px"><br>
+        - Class Gorila<br>
+        <img src="img/tugas/gorila.png" width="500px"><br>
+        - Class Keledai<br>
+        <img src="img/tugas/keledai.png" width="500px"><br>
+        - Class Singa<br>
+        <img src="img/tugas/singa.png" width="500px"><br>
+        - Class MainTugas<br>
+        <img src="img/tugas/main.png" width="500px"><br>
+    - Output :<br>
+    <img src="img/tugas/hasil.png" width="300px"><br><br>
+    - UML :<br>
+    <img src="img/tugas/uml.png" width="600px">
