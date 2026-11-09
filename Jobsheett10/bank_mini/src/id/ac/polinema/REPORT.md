@@ -10,3 +10,7 @@
 ## - Langkah 1: Proyek dan Kelas Dasar (Customer, Exception, Account)
 Untuk hasil running program pada langkah 1 yaitu seperti dibawah ini.<br>
 <img src="img/langkah1.png" width="300px"><br>
+
+## - Langkah 2: Subclass dan Interface (SavingsAccount, CheckingAccount)
+Untuk hasil running program pada langkah 2 yaitu seperti dibawah ini.<br>
+<img src="img/langkah2.png" width="300px"><br>
