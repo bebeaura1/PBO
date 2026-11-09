@@ -1,0 +1,12 @@
+|  | Pemrograman Berbasis Objek |
+|--|--|
+| NIM |  254107020062|
+| Nama | Aura Bintang Aprilian |
+| Kelas | TI - 2G |
+| Repository | [link] (https://github.com/bebeaura1/PBO/tree/main/Jobsheett10) |
+
+# SOLID Principle dan Collections
+
+## - Langkah 1: Proyek dan Kelas Dasar (Customer, Exception, Account)
+Untuk hasil running program pada langkah 1 yaitu seperti dibawah ini.<br>
+<img src="img/langkah1.png" width="300px"><br>
