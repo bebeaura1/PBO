@@ -26,3 +26,7 @@ Untuk hasil running program pada langkah 4 yaitu seperti dibawah ini :<br>
 ## - Langkah 5:  Transaction, Single Responsibility Principle
 Untuk hasil running program pada langkah 5 yaitu seperti dibawah ini :<br>
 <img src="img/langkah5.png" width="400px"><br>
+
+## - Langkah 6:  AccountRepository, Dependency Inversion Principle
+Untuk hasil running program pada langkah 6 yaitu seperti dibawah ini :<br>
+<img src="img/langkah6.png" width="400px"><br>
