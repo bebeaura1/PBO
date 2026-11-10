@@ -22,3 +22,7 @@ Untuk hasil running program pada langkah 3 yaitu seperti dibawah ini :<br>
 ## - Langkah 4: Bank Beralih dari Array ke Map
 Untuk hasil running program pada langkah 4 yaitu seperti dibawah ini :<br>
 <img src="img/langkah4.png" width="400px"><br>
+
+## - Langkah 5:  Transaction, Single Responsibility Principle
+Untuk hasil running program pada langkah 5 yaitu seperti dibawah ini :<br>
+<img src="img/langkah5.png" width="400px"><br>

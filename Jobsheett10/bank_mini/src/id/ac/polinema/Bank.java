@@ -46,4 +46,15 @@ public class Bank {
             System.out.println(acc.getAccountNumber() + " monthly fee: " + acc.monthlyFee());
         }
     }
+
+    public void printHistory(String accountNumber){
+        Account acc = findAccount(accountNumber);
+        if (acc == null) {
+            System.out.println("Account not found: " + accountNumber);
+            return;
+        }
+        for (Transaction t : acc.getHistory()) {
+            System.out.println(accountNumber + " " + t);
+        }
+    }
 }
