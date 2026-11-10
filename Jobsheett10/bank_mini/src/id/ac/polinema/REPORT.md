@@ -14,3 +14,7 @@ Untuk hasil running program pada langkah 1 yaitu seperti dibawah ini.<br>
 ## - Langkah 2: Subclass dan Interface (SavingsAccount, CheckingAccount)
 Untuk hasil running program pada langkah 2 yaitu seperti dibawah ini.<br>
 <img src="img/langkah2.png" width="300px"><br>
+
+## - Langkah 3: Bank Berbasis Array dan Program Utama
+Untuk hasil running program pada langkah 3 yaitu seperti dibawah ini :<br>
+<img src="img/langkah3.png" width="400px"><br>
