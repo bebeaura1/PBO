@@ -40,3 +40,17 @@ Untuk hasil running program pada langkah 7 yaitu seperti dibawah ini :<br>
     <img src="img/langkah7b.png" width="400px"><br>
     - 7c. Interface Segregation<br>
     <img src="img/langkah7c.jpg" width="500px"><br>
+    
+## Tugas Mandiri
+1. 
+    - Input :<br>
+        - Class BusinessAccount<br>
+        <img src="img/tugas/BusinessAccount.png" width="500px"><br>
+        - Class Main<br>
+        <img src="img/tugas/main.png" width="500px"><br>
+    - Output :<br>
+    <img src="img/tugas/hasil.png" width="500px"><br><br>
+
+2. - **(a)** Prinsip yang dibuktikan adalah Open/Closed Principle (OCP). Prinsip ini menyatakan bahwa sebuah entitas perangkat lunak harus terbuka untuk ekstensi (bisa ditambah fitur baru), tetapi tertutup untuk modifikasi (kode lama tidak boleh diubah). Fakta bahwa Account dan Bank tidak perlu diubah sama sekali saat kita menambahkan BusinessAccount membuktikan bahwa sistem sudah didesain dengan baik. Kita bisa memperluas fungsionalitas sistem hanya dengan membuat class turunan baru, tanpa harus mengotak-atik kode inti yang sudah berjalan.<br>
+    - **(b)** Hal ini membuktikan penerapan ISP dan LSP. Method processMonthEnd() tidak perlu tau apakah sebuah objek itu SavingsAccount atau BusinessAccount. Bank hanya bertanya pada objek tersebut "apakah kamu memiliki kemampuan InterestBearing?". Karena BusinessAccount tidak mengimplements interface InterestBearing, maka secara otomatis Bank akan melewatinya (tidak memberikan bunga). Bank tidak perlu mengetahui detail class BusinessAccount karena Bank sepenuhnya bergantung pada interface bukan pada class konkret.<br>
+    - **(c)** Prinsip yang membuat ini mungkin adalah DIP. Prinsip ini menyatakan bahwa modul tingkat tinggi (Bank) tidak boleh bergantung pada modul tingkat rendah ( InMemoryAccountRepository), melainkan harus bergantung pada interface AccountRepository. Bank tidak peduli datanya disimpan di memori, atau dimanapun. Selama class baru tersebut mengimplements interface AccountRepository, Bank bisa langsung menggunakannya tanpa perlu diubah kodenya sama sekali.
