@@ -30,3 +30,13 @@ Untuk hasil running program pada langkah 5 yaitu seperti dibawah ini :<br>
 ## - Langkah 6:  AccountRepository, Dependency Inversion Principle
 Untuk hasil running program pada langkah 6 yaitu seperti dibawah ini :<br>
 <img src="img/langkah6.png" width="400px"><br>
+
+## - Langkah 7: Menelusuri OCP, LSP, dan ISP pada Kode yang Sudah Dibangun
+Untuk hasil running program pada langkah 7 yaitu seperti dibawah ini :<br>
+    - 7a. Open/Closed<br>
+    <img src="img/langkah7a_bank.png" width="400px"><br>
+    <img src="img/langkah7a_account.png" width="400px"><br>
+    - 7b. Liskov Substitution<br>
+    <img src="img/langkah7b.png" width="400px"><br>
+    - 7c. Interface Segregation<br>
+    <img src="img/langkah7c.jpg" width="500px"><br>
